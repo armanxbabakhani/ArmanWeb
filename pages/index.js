@@ -19,17 +19,17 @@ export default function Home() {
           Arman Babakhani 
         </h1>
         <p className={styles.introbox}>
-          <body>I am a researcher and a PhD student interested in quantum information theory and quantum algorithms.</body>
+          <h3>I am a researcher and a PhD student interested in quantum information theory and quantum algorithms.</h3>
         </p>
         <div className={styles.grid}>
           {' '}
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="/me" className={styles.card}>
             <h2>About Me &rarr;</h2>
             <p>My educational background and interests.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Projects &rarr;</h2>
+          <a href="/projects" className={styles.card}>
+            <h2>Research &rarr;</h2>
             <p>Completed projects and collaborations</p>
           </a>
 
@@ -52,19 +52,6 @@ export default function Home() {
           </a>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   )
 }
