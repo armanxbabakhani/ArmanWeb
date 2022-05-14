@@ -34,7 +34,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
+            href="/tutoring"
             className={styles.card}
           >
             <h2>Tutoring &rarr;</h2>

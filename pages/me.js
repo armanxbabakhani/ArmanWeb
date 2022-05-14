@@ -12,9 +12,10 @@ export default function Me() {
                     Arman Babakhani
                 </h2>
                 <p className={styles.me}>
-                    I am a researcher in quantum computing and information theory. 
-                    I have always had an extra enthusiasm for mathematics and physics. 
-                    My academic journey, however, has been full of explorations along various paths in engineering and chemistry. 
+                    I am a researcher and a PhD student, studying quantum information theory. 
+                    I have always had an immense enthusiasm for mathematics and physics. 
+                    My academic journey, however, has been full of explorations along various paths in engineering and chemistry. I have received a Bachelor's degree in Engineering physics
+                    from UC Berkeley and a Masters of Science in Chemistry from University of California, Santa Barbara. Check out my <a href=" " > Resume </a>.
                     Tutoring has been an opportunity to not only support myself during my undergraduate studies, but be able to expand my knowledge and understanding of the topics I've taught. 
 
                     Learning a new topic and mastering one's understanding of it is an intricate process that I have spent a lot of time thinking about. 
