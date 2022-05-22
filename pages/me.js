@@ -8,9 +8,6 @@ export default function Me() {
                 <h1 className={styles.title}>
                     ABOUT ME
                 </h1>
-                <h2 className={styles.container}>
-                    Arman Babakhani
-                </h2>
                 <p className={styles.me}>
                     I am a researcher and a PhD student, studying quantum information theory. 
                     I have always had an immense enthusiasm for mathematics and physics. 

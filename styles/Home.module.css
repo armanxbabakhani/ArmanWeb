@@ -93,7 +93,7 @@
   max-width: 450px;
 }
 .me{
-  background: #dadef9;
+  background: linear-gradient(45deg, #a0adbc, #daebe8);
   margin: 1.5rem;
   padding: 1.5rem;
   text-align: left;

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -23,22 +24,31 @@ export default function Home() {
         </p>
         <div className={styles.grid}>
           {' '}
-          <a href="/me" className={styles.card}>
-            <h2>About Me &rarr;</h2>
-            <p>My educational background and interests.</p>
+          <a  className={styles.card}>
+            <Link href="/me"passHref>
+              <a>
+                <h2>About Me &rarr;</h2>
+                <p>My educational background and interests.</p>
+              </a>
+            </Link>
           </a>
 
-          <a href="/projects" className={styles.card}>
-            <h2>Research &rarr;</h2>
-            <p>Completed projects and collaborations</p>
+          <a className={styles.card}>
+            <Link href="/projects"passHref>
+              <a>
+                <h2>Research &rarr;</h2>
+                <p>Completed projects and collaborations</p>
+              </a>
+            </Link>
           </a>
 
-          <a
-            href="/tutoring"
-            className={styles.card}
-          >
-            <h2>Tutoring &rarr;</h2>
-            <p>Tutoring and educational consultation for STEM students.</p>
+          <a className={styles.card}>
+            <Link href="/tutoring" passHref>
+              <a>
+                <h2>Tutoring &rarr;</h2>
+                <p>Tutoring and educational consultation for STEM students.</p>
+              </a>
+            </Link>
           </a>
 
           <a
