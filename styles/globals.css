@@ -28,12 +28,12 @@ nav ul li {
   float: left;
   position: relative;
 }
-nav ul li a,nav ul li a:visited {
+nav ul li a, nav ul li a:visited , nav ul li ul li a, nav ul li ul li a:visited{
   display: block;
   padding: 0 20px;
   line-height: 75px;
   color: #fff;
-  background: #262626 ;
+  background: transparent ;
   text-decoration: none;
 }
 nav ul li a{
@@ -41,22 +41,19 @@ nav ul li a{
   color: #FFF;
 }
 nav ul li a:hover, nav ul li a:visited:hover {
-  background: #273a4c;
+  background: #21374b;
   color: #ffffff;
 }
-.navbar-dropdown li a{
-  background: #172839;
-}
-nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
-  padding-left: 4px;
-  content: ' \025BE';
-}
-nav ul li ul li {
+
+/* nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
+  
+} */
+/* nav ul li ul li {
   min-width: 190px;
-}
+} */
 nav ul li ul li a {
-  padding: 15px;
-  line-height: 20px;
+  padding-left: 20px;
+  content: ' \025BE';
 }
 
 @media only screen and (max-width: 800px) {
@@ -70,12 +67,9 @@ nav ul {
 nav ul li {
     float: none;
 }
-nav ul li a {
+/* nav ul li a {
     padding: 15px;
     line-height: 20px;
     background: #262626;
-}
-nav ul li ul li a {
-    padding-left: 30px;
-}
+} */
 }

@@ -3,7 +3,6 @@ import styles from "../styles/Layout.module.css"
 import Link from 'next/link'
 
 export default function Layout({children}){
-    const [isOpen, setIsOpen] = useState(false);
     const openMenu = ()=> setIsOpen(!isOpen);
     return <> 
         <section className={styles.navigation}>
@@ -12,7 +11,7 @@ export default function Layout({children}){
                     <a>Arman Babakhani</a>
                 </div>
                 <nav>
-                    <div className={styles.navmobile}><a id="navbar-toggle" href="#!"><span></span></a></div>
+                    {/* <div className={styles.navmobile}><a id="navbar-toggle" href="#!"><span></span></a></div> */}
                     <ul className={styles.navlist}>
                         <li>
                             <Link href="/"passHref> 
@@ -24,12 +23,8 @@ export default function Layout({children}){
                                 <a> About me </a> 
                             </Link>
                         </li>
-                        <li>
-                            <a href="#!">
-                                Publications
-                            </a>
-                            <ul className={isOpen === false ? styles.navbardropdown : 'nav ul li a:visited' }
-                                onClick={openMenu}>
+                        <ItemDrop name = 'Publication'>
+                            <DropdownMenu>
                                 <li>
                                     <a href="#!">Sass</a>
                                 </li>
@@ -39,25 +34,24 @@ export default function Layout({children}){
                                 <li>
                                     <a href="#!">Stylus</a>
                                 </li>
-                            </ul>
-                        </li>
+                            </DropdownMenu>
+                        </ItemDrop>
                         <li>
                             <a href="#!">CV</a>
                         </li>
-                        <li>
-                            <a href="#!">Educational</a>
-                            <ul className={isOpen === false ? styles.navbardropdown : styles.navbardropdown + ' ' + styles.active}>
+                        <ItemDrop name = 'Educational'>
+                            <DropdownMenu>
                                 <li>
-                                    <a href="#!">Tutoring</a>
+                                    <a href="#!">Sass</a>
                                 </li>
                                 <li>
-                                    <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">Videos</a>
+                                    <a href="#!">Less</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Notes</a>
+                                    <a href="#!">Stylus</a>
                                 </li>
-                            </ul>
-                        </li>
+                            </DropdownMenu>
+                        </ItemDrop>
                         <li>
                             <a href="#!">Contact</a>
                         </li>
@@ -65,8 +59,32 @@ export default function Layout({children}){
                 </nav>
             </div>
         </section>
-    
     {children}
     {/* <></> */}
     </>
+}
+
+function ItemDrop(props){
+    const [isOpen, setIsOpen] = useState(false);
+    return (
+        <li>
+            <ul className={styles.droplist}>
+                <li>
+                    <a href='#' onClick={() => setIsOpen(!isOpen)}>
+                        {props.name}
+                    </a>
+                </li>
+            </ul>
+
+            {isOpen && props.children}
+        </li>
+    )
+}
+
+function DropdownMenu(props){
+    return (
+        <div className={styles.navdropdown}> 
+            {props.children}
+        </div>
+    )
 }
