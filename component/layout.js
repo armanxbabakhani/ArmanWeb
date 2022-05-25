@@ -37,7 +37,7 @@ export default function Layout({children}){
                             </DropdownMenu>
                         </ItemDrop>
                         <li>
-                            <a href="#!">CV</a>
+                            <a href="/Arman_Resume.pdf">CV</a>
                         </li>
                         <ItemDrop name = 'Educational'>
                             <DropdownMenu>
@@ -51,9 +51,6 @@ export default function Layout({children}){
                                 </li>
                             </DropdownMenu>
                         </ItemDrop>
-                        <li>
-                            <a href="#!">Contact</a>
-                        </li>
                     </ul>
                 </nav>
             </div>
