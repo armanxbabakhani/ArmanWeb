@@ -108,6 +108,9 @@
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 1000px;
 }
+.me a:hover{
+    color: #186bb4;
+}
 .code {
   background: #fafafa;
   border-radius: 5px;
@@ -141,8 +144,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #1985bf;
+  border-color: #4fbbf1;
 }
 
 .card h2 {

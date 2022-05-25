@@ -3,7 +3,6 @@ import styles from "../styles/Layout.module.css"
 import Link from 'next/link'
 
 export default function Layout({children}){
-    const openMenu = ()=> setIsOpen(!isOpen);
     return <> 
         <section className={styles.navigation}>
             <div className={styles.navcontainer}>
@@ -11,7 +10,6 @@ export default function Layout({children}){
                     <a>Arman Babakhani</a>
                 </div>
                 <nav>
-                    {/* <div className={styles.navmobile}><a id="navbar-toggle" href="#!"><span></span></a></div> */}
                     <ul className={styles.navlist}>
                         <li>
                             <Link href="/"passHref> 
@@ -26,13 +24,13 @@ export default function Layout({children}){
                         <ItemDrop name = 'Publication'>
                             <DropdownMenu>
                                 <li>
-                                    <a href="#!">Sass</a>
+                                    <a href="#!">Quantum Error Correction</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Less</a>
+                                    <a href="#!"> Topological Defects</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Stylus</a>
+                                    <a href="#!"> Non-abelian Quantum Chaos </a>
                                 </li>
                             </DropdownMenu>
                         </ItemDrop>
@@ -42,13 +40,10 @@ export default function Layout({children}){
                         <ItemDrop name = 'Educational'>
                             <DropdownMenu>
                                 <li>
-                                    <a href="#!">Sass</a>
+                                    <a href="#!">YouTube Videos</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Less</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Stylus</a>
+                                    <a href="#!">Tutoring Experience</a>
                                 </li>
                             </DropdownMenu>
                         </ItemDrop>
@@ -60,7 +55,6 @@ export default function Layout({children}){
             </div>
         </section>
     {children}
-    {/* <></> */}
     </>
 }
 
@@ -75,8 +69,8 @@ function ItemDrop(props){
                     </a>
                 </li>
             </ul>
-
             {isOpen && props.children}
+            {isOpen && <div className={styles.overlay} onClick = {() => setIsOpen(false)}></div>}
         </li>
     )
 }
