@@ -27,7 +27,7 @@ export default function Me() {
                         <p> The mathematical framework of non-abelian anyons with topological defects can be explored using a framework known as G-crossed modular tensor categories. In this work, in collaboration with Dr. Parsa Bonderson from Microsoft, I show
                             an intrinsic connection between topology of higher genus surfaces and fusion categories of topological defects.
                             {' '}
-                            <h4> Publication: <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.103.042406" > arXiV </a> </h4>
+                            <h4> Publication: <a href="https://inspirehep.net/authors/2031259" > InspireHEP </a> </h4>
                         </p>
                     </a>
 
@@ -41,9 +41,6 @@ export default function Me() {
                     </a>
                 </div>
             </main>
-            <footer className={styles.footer}>
-                <Link href="/" passHref><a> Return to the Main Page </a></Link>
-            </footer>
         </div>
         
     )

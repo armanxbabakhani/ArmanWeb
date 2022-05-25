@@ -26,20 +26,24 @@
 }
 .footer {
   display: flex;
-  flex: 1;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .footer a {
   display: flex;
   justify-content: center;
+  transition: filter 250ms;
   align-items: center;
   flex-grow: 1;
+  max-width: 150px;
 }
 
+.footer a:hover {
+  filter: brightness(1.4);
+}
 .title a {
   color: #0070f3;
   text-decoration: none;
@@ -53,7 +57,7 @@
 
 .title,
 .description {
-  margin: 0;
+  margin: 1rem;
   line-height: 1.15;
   font-size: 4rem;
   font-family: 'Roboto'
@@ -67,6 +71,15 @@
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+}
+
+.description li a{
+  color: rgb(196, 58, 33);
+  font-weight: bold;
+}
+
+.description li a:hover{
+  color: #186bb4;
 }
 
 .introbox{

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import styles from "../styles/Layout.module.css"
+import styleshome from "../styles/Home.module.css"
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Layout({children}){
     return <> 
@@ -24,10 +26,10 @@ export default function Layout({children}){
                         <ItemDrop name = 'Publication'>
                             <DropdownMenu>
                                 <li>
-                                    <a href="#!">Quantum Error Correction</a>
+                                    <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.103.042406">Quantum Error Correction</a>
                                 </li>
                                 <li>
-                                    <a href="#!"> Topological Defects</a>
+                                    <a href="https://inspirehep.net/authors/2031259"> Topological Defects</a>
                                 </li>
                                 <li>
                                     <a href="#!"> Non-abelian Quantum Chaos </a>
@@ -40,10 +42,12 @@ export default function Layout({children}){
                         <ItemDrop name = 'Educational'>
                             <DropdownMenu>
                                 <li>
-                                    <a href="#!">YouTube Videos</a>
+                                    <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">YouTube Videos</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Tutoring Experience</a>
+                                    <Link href="/tutoring" passHref> 
+                                        <a>Tutoring Experience</a> 
+                                    </Link> 
                                 </li>
                             </DropdownMenu>
                         </ItemDrop>
@@ -54,7 +58,17 @@ export default function Layout({children}){
                 </nav>
             </div>
         </section>
-    {children}
+        {children}
+        <footer>
+            <div className={styleshome.footer}>
+                <a href="www.linkedin.com/in/arman-babakhani"> 
+                    <Image src="/linkedin.png" alt="linkedin" width="50px" height="50px" /> 
+                </a>
+                <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA"> 
+                    <Image src="/youtube.png" alt="youtube" width="120px" height="40px" /> 
+                </a>
+            </div>
+        </footer>
     </>
 }
 

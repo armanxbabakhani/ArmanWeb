@@ -24,9 +24,6 @@ export default function Me() {
                     </p>
                 </div>
             </main>
-            <footer className={styles.footer}>
-                <Link href="/" passHref><a> Return to the Main Page </a></Link>
-            </footer>
         </div>
         
     )
