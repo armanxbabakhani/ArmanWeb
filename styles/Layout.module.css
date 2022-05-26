@@ -23,7 +23,7 @@
     position: absolute;
     top: 60px;
     background: rgb(79, 85, 99);
-    /* width: ; */
+    transform: translateX(-20%);
     transition: background 300ms;
     padding: 0.2rem;
     z-index: 50;
@@ -33,6 +33,11 @@
 
 .navdropdown:hover{
     background-color: rgb(74, 90, 109);
+}
+
+.droplist a:after{
+    padding-left: 2px ;
+    content: ' \025BE';
 }
 
 .overlay{

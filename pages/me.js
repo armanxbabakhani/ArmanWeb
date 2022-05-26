@@ -16,11 +16,10 @@ export default function Me() {
                     from UC Berkeley and a Masters of Science in Chemistry from University of California, Santa Barbara. Check out my <a href="/Arman_Resume_web.pdf" > CV </a>.
                     </p>
                     <p>
-                    Tutoring has been an opportunity to not only support myself during my undergraduate studies, but be able to expand my knowledge and understanding of the topics I&apos;ve taught. 
-                    Learning a new topic and mastering one &apos; s understanding of it is an intricate process that I have spent a lot of time thinking about. 
-                    Just like any other enterprise, it can be done poorly or efficiently, or somewhere in between. 
-                    I hope to provide an optimal learning opportunity for new learners and passionate students who would like to expand their understanding of mathematics, physics, and chemistry. 
-                    With more than seven years of experience in teaching, I am able to guide students through a joyful learning experience, with the hope of fueling their excitement to learn about the understanding of the world they live in.
+                    Learning through teaching has been a very fruitful enterprise for me as an intellectually curious researcher. Tutoring has been an opportunity to not only support myself during my undergraduate studies, but be able to expand my knowledge and understanding of the topics I&apos;ve taught. 
+                    Learning a new topic and mastering one&apos;s understanding of it is an intricate process that I have spent a lot of time thinking about. 
+                    Just like any other enterprise, it can be done poorly or efficiently, or somewhere in between. Having repeated this process tens of thousands of times has not only made me optimize
+                    my approach to learning but has taught me a lot about myself. Learning one&apos;s own intellectual boundaries is always challenging and not a very uplifting process, however, the alternative is passive and cowardly. 
                     </p>
                 </div>
             </main>

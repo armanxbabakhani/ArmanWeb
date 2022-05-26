@@ -47,19 +47,14 @@ nav ul li a:hover, nav ul li a:visited:hover {
 nav ul li div li a {
   display: flex;
   background: transparent ;
-  color: #ffffff;
-  transition: background 100ms;
+  color: #e1dfdf;
+  transition: color 100ms;
   line-height: 50px;
   flex-grow: 1;
-  width: 250px;
+  width: 250px; 
 }
 nav ul li div li a:hover {
-  background: rgb(43, 57, 76);
-}
-
-nav ul li ul li a::after{
-  padding-left: 5px;
-  content: ' \025BE';
+  color: rgb(255, 255, 255);
 }
 
 @media only screen and (max-width: 800px) {

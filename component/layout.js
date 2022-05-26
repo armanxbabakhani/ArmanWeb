@@ -61,6 +61,7 @@ export default function Layout({children}){
         {children}
         <footer>
             <div className={styleshome.footer}>
+                <a> Connect with me: </a>
                 <a href="https://www.linkedin.com/in/arman-babakhani/"> 
                     <Image src="/linkedin.png" alt="linkedin" width="50px" height="50px" /> 
                 </a>
