@@ -32,31 +32,31 @@ nav ul li a, nav ul li a:visited , nav ul li ul li a, nav ul li ul li a:visited{
   display: block;
   padding: 0 20px;
   line-height: 75px;
-  color: #fff;
   background: transparent ;
   text-decoration: none;
 }
 nav ul li a{
   background: transparent;
-  transition: background 300ms;
-  color: #FFF;
+  transition: color 300ms;
+  color: #d9d9d9;
 }
 nav ul li a:hover, nav ul li a:visited:hover {
-  background: #21374b;
-  color: #ffffff;
+  color: #e9d08c;
 }
 
 nav ul li div li a {
   display: flex;
   background: transparent ;
-  transition: background 300ms;
+  color: #ffffff;
+  transition: background 100ms;
   line-height: 50px;
+  flex-grow: 1;
   width: 250px;
 }
 nav ul li div li a:hover {
-  background: #0e5465;
-  color: #ffffff;
+  background: rgb(43, 57, 76);
 }
+
 nav ul li ul li a::after{
   padding-left: 5px;
   content: ' \025BE';

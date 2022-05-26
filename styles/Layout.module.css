@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
  .navigation {
      height: 75px;
-     background: linear-gradient(45deg, #050a0f, #444453);
+     background: linear-gradient(45deg, #000000, #262821);
 }
  .brand {
      position: absolute;
@@ -23,7 +23,7 @@
     position: absolute;
     top: 60px;
     background: rgb(79, 85, 99);
-    width: flex;
+    /* width: ; */
     transition: background 300ms;
     padding: 0.2rem;
     z-index: 50;
