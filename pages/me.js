@@ -12,12 +12,12 @@ export default function Me() {
                     <p>
                     I am a researcher and a PhD student, studying quantum information theory. 
                     I have always had an immense enthusiasm for mathematics and physics. 
-                    My academic journey, however, has been full of explorations along various paths in engineering and chemistry. I have received a Bachelor's degree in Engineering physics
-                    from UC Berkeley and a Masters of Science in Chemistry from University of California, Santa Barbara. Check out my <a href=" " > CV </a>.
+                    My academic journey, however, has been full of explorations along various paths in engineering and chemistry. I have received a Bachelor &apos; s degree in Engineering physics
+                    from UC Berkeley and a Masters of Science in Chemistry from University of California, Santa Barbara. Check out my <a href="/Arman_Resume_web.pdf" > CV </a>.
                     </p>
                     <p>
-                    Tutoring has been an opportunity to not only support myself during my undergraduate studies, but be able to expand my knowledge and understanding of the topics I've taught. 
-                    Learning a new topic and mastering one's understanding of it is an intricate process that I have spent a lot of time thinking about. 
+                    Tutoring has been an opportunity to not only support myself during my undergraduate studies, but be able to expand my knowledge and understanding of the topics I&apos;ve taught. 
+                    Learning a new topic and mastering one &apos; s understanding of it is an intricate process that I have spent a lot of time thinking about. 
                     Just like any other enterprise, it can be done poorly or efficiently, or somewhere in between. 
                     I hope to provide an optimal learning opportunity for new learners and passionate students who would like to expand their understanding of mathematics, physics, and chemistry. 
                     With more than seven years of experience in teaching, I am able to guide students through a joyful learning experience, with the hope of fueling their excitement to learn about the understanding of the world they live in.

@@ -28,7 +28,7 @@ export default function Home() {
             <Link href="/me"passHref>
               <a>
                 <h2>About Me &rarr;</h2>
-                <p>My educational background and interests.</p>
+                <p> My educational background and interests.</p>
               </a>
             </Link>
           </div>
