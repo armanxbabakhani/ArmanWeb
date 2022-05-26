@@ -35,15 +35,16 @@
 .footer a {
   display: flex;
   justify-content: center;
-  transition: filter 250ms;
+  transition: filter 200ms;
   align-items: center;
   flex-grow: 1;
   max-width: 150px;
 }
 
 .footer a:hover {
-  filter: brightness(1.4);
+  filter: brightness(1.3);
 }
+
 .title a {
   color: #0070f3;
   text-decoration: none;

@@ -34,10 +34,13 @@ export default function Layout({children}){
                                 <li>
                                     <a href="#!"> Non-abelian Quantum Chaos </a>
                                 </li>
+                                <li>
+                                    <a href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-6-6-794&id=413486"> Deep Learning: Microscopy </a>
+                                </li>
                             </DropdownMenu>
                         </ItemDrop>
                         <li>
-                            <a href="/Arman_Resume.pdf">CV</a>
+                            <a href="/Arman_Resume_web.pdf">CV</a>
                         </li>
                         <ItemDrop name = 'Educational'>
                             <DropdownMenu>
@@ -58,11 +61,14 @@ export default function Layout({children}){
         {children}
         <footer>
             <div className={styleshome.footer}>
-                <a href="www.linkedin.com/in/arman-babakhani"> 
+                <a href="https://www.linkedin.com/in/arman-babakhani/"> 
                     <Image src="/linkedin.png" alt="linkedin" width="50px" height="50px" /> 
                 </a>
                 <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA"> 
-                    <Image src="/youtube.png" alt="youtube" width="120px" height="40px" /> 
+                    <Image src="/youtube.jpg" alt="youtube" width="70px" height="50px" /> 
+                </a>
+                <a href="https://github.com/armanxbabakhani">
+                    <Image src="/github.png" alt="github" width="50px" height="50px" /> 
                 </a>
             </div>
         </footer>

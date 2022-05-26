@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <title>Arman Babakhani</title>
         <meta name="personal website" content="porjects and services" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Armanlogo.png" />
       </Head>
 
       <main className={styles.main}>
@@ -20,7 +20,7 @@ export default function Home() {
           Arman Babakhani 
         </h1>
         <div className={styles.introbox}>
-          <h4>I am a researcher and a PhD student interested in quantum information theory and quantum algorithms.</h4>
+          <h4>I am a researcher and a PhD student, studying quantum information theory and quantum algorithms.</h4>
         </div>
         <div className={styles.grid}>
           {' '}
@@ -52,12 +52,12 @@ export default function Home() {
           </div>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="#!"
             className={styles.card}
           >
-            <h2>Arts &rarr;</h2>
+            <h2>Notes and Ongoing Projects &rarr;</h2>
             <p>
-              Some of my paintings and drawings as a part-time arts enthusiast.
+              Some of my ongoing projects and some notes on miscellaneous topics.
             </p>
           </a>
         </div>
