@@ -32,7 +32,7 @@ export default function Layout({children}){
                                     <a href="https://inspirehep.net/authors/2031259"> Topological Defects</a>
                                 </li>
                                 <li>
-                                    <a href="#!"> Non-abelian Quantum Chaos </a>
+                                    <a href="https://arxiv.org/abs/2206.05310"> Non-abelian Quantum Chaos </a>
                                 </li>
                                 <li>
                                     <a href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-6-6-794&id=413486"> Deep Learning: Microscopy </a>
