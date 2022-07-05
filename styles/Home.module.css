@@ -25,12 +25,12 @@
   align-items: left;
 }
 .portrait{
-  justify-content: center;
+  padding: 15px;
   border: 5px solid #090808;
-  border-radius: 5px;
-  align-items: center;
-  max-width: 250px;
-  max-height: 230px;
+  border-radius: 50px;
+  /*align-items: center;*/
+  /*max-width: 250px;
+  max-height: 230px;*/
 }
 
 .footer {
