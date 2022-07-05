@@ -20,7 +20,7 @@ export default function Home() {
           Arman Babakhani 
         </h1>
         <div className={styles.introbox}>
-          <h4>I am a researcher and a PhD student, studying quantum information theory and quantum algorithms.</h4>
+          <h4>I am a researcher and a PhD student in quantum information theory and quantum algorithms.</h4>
         </div>
         <div className={styles.grid}>
           {' '}
