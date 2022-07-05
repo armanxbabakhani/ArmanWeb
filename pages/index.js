@@ -13,8 +13,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.container}>
-          <Image src="/arman_portrait.png" alt="Arman" width="170px" height="200px"/>
+        <div className={styles.portrait}>
+          <Image src="/Arman_portrait_1.jpg" alt="Arman" width="250px" height="230px"/>
         </div>
         <h1 className={styles.title}>
           Arman Babakhani 

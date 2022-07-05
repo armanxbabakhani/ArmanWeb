@@ -24,6 +24,15 @@
   font-size: large;
   align-items: left;
 }
+.portrait{
+  justify-content: center;
+  border: 5px solid #090808;
+  border-radius: 5px;
+  align-items: center;
+  max-width: 250px;
+  max-height: 230px;
+}
+
 .footer {
   background-color: #414555;
   display: flex;
