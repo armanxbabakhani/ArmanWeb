@@ -21,6 +21,8 @@ export default function Tutoring() {
                     <li> Physics: Quantum and Classical mechanics both undergraduate and graduate level, Electromagnetism, quantum computing and more</li>
                     <li> Calculus and higher mathematics: multivariable/vector calculus, complex analysis, linear algebra and more</li>
                     <li> Chemistry: Organic, Inorganic, physical, and quantum chemistry undergraduate and some graduate level </li>
+                    <h3> Contact me via Email: armanxbabakhani [at] gmail.com </h3>
+                    <a>  Or connect with me on LinkedIn via the link at the bottom of the page.</a>
                 </div>
             </div>
             <div className={styles.main}>
