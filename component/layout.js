@@ -29,7 +29,7 @@ export default function Layout({children}){
                                     <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.103.042406">Quantum Error Correction</a>
                                 </li>
                                 <li>
-                                    <a href="https://inspirehep.net/authors/2031259"> Topological Defects</a>
+                                    <a href="https://arxiv.org/abs/2210.14943"> Topological Defects</a>
                                 </li>
                                 <li>
                                     <a href="https://arxiv.org/abs/2206.05310"> Non-abelian Quantum Chaos </a>

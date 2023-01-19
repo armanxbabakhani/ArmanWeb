@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import Image from 'next/image'
 
 export default function Me() {
     return(
@@ -27,7 +28,7 @@ export default function Me() {
                         <p> The mathematical framework of non-abelian anyons with topological defects can be explored using a framework known as G-crossed modular tensor categories. In this work, in collaboration with Dr. Parsa Bonderson from Microsoft, I show
                             an intrinsic connection between topology of higher genus surfaces and fusion categories of topological defects.
                             {' '}
-                            <h4> Publication: <a href="https://inspirehep.net/authors/2031259" > InspireHEP </a> </h4>
+                            <h4> Publication: <a href="https://arxiv.org/abs/2210.14943" > arXiV </a> </h4>
                         </p>
                     </div>
 
@@ -39,6 +40,12 @@ export default function Me() {
                             <h4> Publication: <a href="https://arxiv.org/abs/2206.05310" > arXiV </a> </h4>
                         </p>
                     </div>
+                </div>
+                <div className={styles.logo}> 
+                        <h3> My Google Scholar page: </h3>
+                        <a href="https://scholar.google.com/citations?user=JEa4EDAAAAAJ&hl=en">
+                        <Image src="/googsch_logo.png" alt="googsch" width="60px" height="60px" /> 
+                        </a>
                 </div>
             </main>
         </div>
