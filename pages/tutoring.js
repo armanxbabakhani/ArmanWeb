@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Tutoring() {
     return(
-        <body className={styles.container}>
+        <div className={styles.container}>
             <div className={styles.main}>
                 <div className={styles.logotitle}>
                     <div className={styles.logo}>
@@ -25,7 +25,7 @@ export default function Tutoring() {
                     <li> For a detailed review of my previous tutoring experiences and student reviews, check out my tutor profile on <a href="https://www.wyzant.com/Tutors/ArmanB"> Wyzant.com </a></li>
                 </div>
             </div>
-        </body>
+        </div>
         
     )
 }
