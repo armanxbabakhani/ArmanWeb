@@ -14,12 +14,13 @@ export default function Home() {
 
       <main className={styles.main}>
         <div>
-          <Image src="/Arman_portrait_1.jpg" alt="Arman" width="250px" height="230px" className={styles.portrait}/>
+          <Image src="/Arman_portrait_1.jpg" alt="Arman" width="340px" height="290px" className={styles.portrait}/>
         </div>
-        <h1 className={styles.title}>
-          Arman Babakhani 
-        </h1>
         <div className={styles.introbox}>
+          <h3>Welcome! I am</h3>
+          <h1 className={styles.title}>
+            Arman Babakhani 
+          </h1>
           <h4>I am a researcher and a PhD student in quantum information theory and quantum algorithms.</h4>
         </div>
         <div className={styles.grid}>
