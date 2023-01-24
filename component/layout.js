@@ -7,55 +7,63 @@ import Image from 'next/image'
 export default function Layout({children}){
     return <> 
         <section className={styles.navigation}>
-            <div className={styles.navcontainer}>
-                <div className={styles.brand}>
-                    <a>Arman Babakhani</a>
+            <div className={styles.brand}>
+                <a>Arman Babakhani</a>
+            </div>
+            <div className={styles.brandabv}>
+                <a>AB</a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <Link href="/"passHref> 
+                            <a> Home</a> 
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/me" passHref> 
+                            <a> About me </a> 
+                        </Link>
+                    </li>
+                    <ItemDrop name = 'Publication'>
+                        <DropdownMenu>
+                            <li>
+                                <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.103.042406">Quantum Error Correction</a>
+                            </li>
+                            <li>
+                                <a href="https://arxiv.org/abs/2210.14943"> Topological Defects</a>
+                            </li>
+                            <li>
+                                <a href="https://arxiv.org/abs/2206.05310"> Non-abelian Quantum Chaos </a>
+                            </li>
+                            <li>
+                                <a href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-6-6-794&id=413486"> Deep Learning: Microscopy </a>
+                            </li>
+                        </DropdownMenu>
+                    </ItemDrop>
+                    <li>
+                        <a href="/Arman_Resume_web.pdf">CV</a>
+                    </li>
+                    <ItemDrop name = 'Educational'>
+                        <DropdownMenu>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">YouTube Videos</a>
+                            </li>
+                            <li>
+                                <Link href="/tutoring" passHref> 
+                                    <a>Tutoring Experience</a> 
+                                </Link> 
+                            </li>
+                        </DropdownMenu>
+                    </ItemDrop>
+                </ul>
+            </nav>
+            <div className={styles.hamwrapper}>
+                <div>
+                    <div className={styles.bar1}></div>
+                    <div className={styles.bar2}></div>
+                    <div className={styles.bar3}></div>
                 </div>
-                <nav>
-                    <ul className={styles.navlist}>
-                        <li>
-                            <Link href="/"passHref> 
-                                <a> Home</a> 
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/me" passHref> 
-                                <a> About me </a> 
-                            </Link>
-                        </li>
-                        <ItemDrop name = 'Publication'>
-                            <DropdownMenu>
-                                <li>
-                                    <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.103.042406">Quantum Error Correction</a>
-                                </li>
-                                <li>
-                                    <a href="https://arxiv.org/abs/2210.14943"> Topological Defects</a>
-                                </li>
-                                <li>
-                                    <a href="https://arxiv.org/abs/2206.05310"> Non-abelian Quantum Chaos </a>
-                                </li>
-                                <li>
-                                    <a href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-6-6-794&id=413486"> Deep Learning: Microscopy </a>
-                                </li>
-                            </DropdownMenu>
-                        </ItemDrop>
-                        <li>
-                            <a href="/Arman_Resume_web.pdf">CV</a>
-                        </li>
-                        <ItemDrop name = 'Educational'>
-                            <DropdownMenu>
-                                <li>
-                                    <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">YouTube Videos</a>
-                                </li>
-                                <li>
-                                    <Link href="/tutoring" passHref> 
-                                        <a>Tutoring Experience</a> 
-                                    </Link> 
-                                </li>
-                            </DropdownMenu>
-                        </ItemDrop>
-                    </ul>
-                </nav>
             </div>
         </section>
         {children}
@@ -97,6 +105,14 @@ function DropdownMenu(props){
     return (
         <div className={styles.navdropdown}> 
             {props.children}
+        </div>
+    )
+}
+
+function hamclick(x) {
+    const [isOpen, setIsOpen] = useState(false);
+    return (
+        <div className={isOpen ? ".change" : ""}>
         </div>
     )
 }
