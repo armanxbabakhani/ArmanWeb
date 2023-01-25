@@ -2,11 +2,20 @@
  .navigation {
      height: 75px;
      background: linear-gradient(45deg, #000000, #262821);
+     min-width: 500px;
      display: flex;
      flex-direction: row;
      display: flex;
      flex-direction: row;
      justify-content: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 500px;
+    min-height: 875px;
 }
  .brand {
      margin: 0 1rem;
@@ -74,12 +83,59 @@
     display: none;
 }
 
-.bar1 , .bar2 , .bar3{
-    width: 40px;
+.hamreg{
+    width: 50px;
     height: 5px;
     background-color: rgb(208, 208, 208);
     margin: 8px 0;
-    transition: 0.4s;
+    transition: all 0.4s ease-in-out;
+}
+.hamreg::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: rgb(208, 208, 208);
+    margin: 8px 0;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(-20px)
+}
+.hamreg::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: rgb(208, 208, 208);
+    margin: 8px 0;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(5px)
+}
+
+.hamchange{
+    width: 40px;
+    height: 5px;
+    background-color: transparent;
+    margin: 8px 0;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-20px);
+}
+.hamchange::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: rgb(208, 208, 208);
+    transition: all 0.4s ease-in-out;
+    transform: rotate(45deg)
+}
+.hamchange::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: rgb(208, 208, 208);
+    transition: all 0.4s ease-in-out;
+    transform: rotate(-45deg)
 }
 
 /* Rotate first bar */
@@ -106,6 +162,9 @@
 
 @media only screen and (max-width: 700px){
     .hamwrapper{
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-between;
     }
 }

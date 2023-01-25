@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: left;
+    align-items: center;
     min-height: 475pt;
   }
 
@@ -16,6 +17,8 @@
   }
     
   .logo {
+    position: relative;
+    top: -40px;
     margin: 0 2rem;
     justify-content: left;
     flex-shrink: 0;
@@ -25,12 +28,12 @@
     flex: 1;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     font-family: 'Roboto';
     font-weight: 2000;
     font-size: 1.2rem;
   }
-  
+
   .logotitle a {
     display: flex;
     color:rgb(204, 200, 198);
@@ -41,6 +44,9 @@
     max-width: 150px;
   }
   
+  .logotitle h1{
+    display: block;
+  }
   .logo a:hover {
     filter: brightness(1.4);
   }
@@ -200,5 +206,11 @@
     .grid {
       width: 100%;
       flex-direction: column;
+    }
+    .logotitle{
+      margin: 2rem;
+    }
+    .logotitle h1{
+      display: none;
     }
   }

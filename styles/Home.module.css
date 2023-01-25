@@ -59,16 +59,32 @@
 
 .footer {
   background-color: #414555;
+
+  
+
+
+
+  
   display: flex;
   padding: 2rem 0;
   border-top: 2px solid #090808;
   justify-content: center;
+  min-width: 500px;
   /* align-items: center; */
+}
+
+.footer p {
+  display: flex;
+  color:rgb(204, 200, 198);
+  justify-content: center;
+  transition: filter 200ms;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 150px;
 }
 
 .footer a {
   display: flex;
-  color:rgb(204, 200, 198);
   justify-content: center;
   transition: filter 200ms;
   align-items: center;
@@ -79,6 +95,7 @@
 .footer a:hover {
   filter: brightness(1.2);
 }
+
 
 .title a {
   color: #0070f3;
@@ -223,4 +240,12 @@
     width: 100%;
     flex-direction: column;
   }
+  .card {
+    display: none;
+  }
+
+  .footer p {
+    display: none;
+  }
 }
+
