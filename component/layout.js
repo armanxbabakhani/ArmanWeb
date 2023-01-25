@@ -8,6 +8,7 @@ import styled from 'styled-components';
 
 export default function Layout({children}){
     const Hamburger = styled.div`
+    z-index: 20;
     width: 40px;
     height: 5px;
     background-color: #BCBCBC;
@@ -46,6 +47,40 @@ export default function Layout({children}){
         }
     }
     `;
+    const Backarrow = styled.div`
+        /* styles for the button */
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 8px 16px;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+        background-color: black;
+        border-radius: 4px;
+        border: none;
+      
+        /* styles for the arrow */
+        position: relative;
+        width: 0;
+        height: 0;
+        margin-right: 8px;
+      }
+      
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -5px;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent transparent #fff;
+      }`;
+
     const [isOpen, setIsOpen] = useState(false);
     return <> 
         <body>
@@ -103,14 +138,15 @@ export default function Layout({children}){
                 </nav>
                 <div className={styles.hamwrapper}>
                     <Hamburger className={isOpen ? "open" : ""} onClick={() => setIsOpen(!isOpen)} />
-                    {isOpen && <div className={styles.sidenav}>
-                        <a href="#home">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#contact">Publications</a>
-                        <a href=" ">Contact</a>
-                        <a href=" ">Educational</a>
-                        </div>
-                     }
+                    {isOpen && 
+                    <div className={styles.sidenav}>
+                        <a href="/">Home</a>
+                        <a href="/me">About</a>
+                        <a href="/projects">Publications</a>
+                        <a href="/Arman_Resume_web.pdf">CV</a>
+                        <a href="/tutoring">Tutoring</a>
+                    </div>
+                    }
                 </div>
             </head>
             <main className={styles.main}>
