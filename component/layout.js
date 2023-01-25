@@ -3,9 +3,50 @@ import styles from "../styles/Layout.module.css"
 import styleshome from "../styles/Home.module.css"
 import Link from 'next/link'
 import Image from 'next/image'
+import styled from 'styled-components';
+
 
 export default function Layout({children}){
-    const [active , setActive] = useState(false);
+    const Hamburger = styled.div`
+    width: 40px;
+    height: 5px;
+    background-color: #BCBCBC;
+    margin: 6px 0;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+
+    &::before, &::after {
+        content: "";
+        width: 40px;
+        height: 5px;
+        position: absolute;
+        background-color: #BCBCBC;
+        margin: 6px 0;
+        border-radius: 3px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    &::before {
+        transform: translateY(10px);
+    }
+
+    &::after {
+        transform: translateY(-20px);
+    }
+
+    &.open {
+        background-color: transparent;
+
+        &::before {
+        transform: translateY(-5px) rotate(45deg);
+        }
+
+        &::after {
+        transform: translateY(-5px) rotate(-45deg);
+        }
+    }
+    `;
+    const [isOpen, setIsOpen] = useState(false);
     return <> 
         <body>
             <head className={styles.navigation}>
@@ -61,9 +102,15 @@ export default function Layout({children}){
                     </ul>
                 </nav>
                 <div className={styles.hamwrapper}>
-                    <div onClick={() => setActive(!active)}> 
-                        <div className={active ? styles.hamchange : styles.hamreg}/>
-                    </div>
+                    <Hamburger className={isOpen ? "open" : ""} onClick={() => setIsOpen(!isOpen)} />
+                    {isOpen && <div className={styles.sidenav}>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Publications</a>
+                        <a href=" ">Contact</a>
+                        <a href=" ">Educational</a>
+                        </div>
+                     }
                 </div>
             </head>
             <main className={styles.main}>
