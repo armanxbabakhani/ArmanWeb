@@ -144,6 +144,7 @@ export default function Layout({children}){
                             <a href="/projects">Publications</a>
                             <a href="/Arman_Resume_web.pdf">CV</a>
                             <a href="/tutoring">Tutoring</a>
+                            <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">Videos</a>
                         </div>
                         }
                 </div>

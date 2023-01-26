@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <div className={styles.introbox}>
           <h3>Welcome! I am</h3>
-          <h1 className={styles.title}>
+          <h1>
             Arman Babakhani 
           </h1>
           <h4>I am a researcher and a PhD student in quantum information theory and quantum algorithms.</h4>
