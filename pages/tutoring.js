@@ -13,7 +13,7 @@ export default function Tutoring() {
                     <h1> Tutoring and Educational Consultation </h1>
                 </div>
                 <div className={styles.description}>
-                    <h2> Private tutoring for subjects of mathematics, physics, and chemistry is offered. Here is a detailed list of my courses I tutor </h2>
+                    <h2> Private tutoring for subjects of mathematics, physics, and chemistry is offered. Here is a detailed list of courses I tutor </h2>
                     <li> High School: AP Physics, Calculus and Chemistry</li>
                     <li> Physics: Quantum and Classical mechanics both undergraduate and graduate level, Electromagnetism, quantum computing and more</li>
                     <li> Calculus and higher mathematics: multivariable/vector calculus, complex analysis, linear algebra and more</li>
