@@ -28,10 +28,6 @@ display: flex;
 flex-direction: column;
 jutify-content: center;
 background-color: transparent;
-
-&.open{
-    background-color: gray;
-}
 `
 const Hamburger = styled.div`
 z-index: 20;
