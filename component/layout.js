@@ -5,6 +5,20 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styled from 'styled-components';
 
+const Background = styled.div`
+position: absolute;
+display: flex;
+width: 100%;
+flex-direction: column;
+jutify-content: center;
+background-color: gray;
+z-index: 5;
+transition: background 300ms;
+
+&.open{
+    background-color: gray;
+}
+`
 const Hamburger = styled.div`
 z-index: 20;
 width: 40px;
@@ -82,7 +96,7 @@ const Backarrow = styled.div`
 export default function Layout({children}){
     const [isOpen, setIsOpen] = useState(false);
     return <> 
-        <body className="display: flex , flex-direction: column, jutify-content: center">
+        <Background className={isOpen ? "open" : ""}>
             <head className={styles.navigation}>
                 <div className={styles.brand}>
                     <a>Arman Babakhani</a>
@@ -166,7 +180,7 @@ export default function Layout({children}){
                     </a>
                 </div>
             </footer>
-        </body>
+        </Background>
             
     </>
 }
