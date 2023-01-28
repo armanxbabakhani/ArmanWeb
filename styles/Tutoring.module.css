@@ -104,6 +104,16 @@
     font-size: 1.5rem;
   }
 
+  .description h2 a{
+    color: #01499b;
+    font-weight: 400;
+    transition: color 300ms;
+  }
+  
+  .description h2 a:hover{
+    color: #58431f;
+  }
+
   .introbox{
     background: #ffffff;
     margin: 0.5rem;
