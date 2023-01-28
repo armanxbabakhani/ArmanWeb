@@ -149,6 +149,13 @@
   font-family: 'Robooto', Georgia, 'Times New Roman', Times, serif;
 }
 
+.introbox h1{
+  padding: 0;
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
 .introbox h3{
   padding: 0;
   margin: 1rem 0 0;
@@ -162,12 +169,6 @@
   font-weight: 80;
 }
 
-.introbox h1{
-  padding: 0;
-  margin: 0;
-  font-size: 4rem;
-  font-weight: 500;
-}
 .roundbox {
   background: #feefe4;
   margin: 1rem;

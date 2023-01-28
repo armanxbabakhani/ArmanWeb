@@ -5,15 +5,28 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styled from 'styled-components';
 
+const Toplay = styled.div`
+position: fixed;
+left:0;
+right:0;
+top: 0;
+bottom: 0;
+background-color: gray;
+opacity: 0.7;
+width:100%;
+height:100%;
+z-index: 10;
+overflow: auto;
+`
+
 const Background = styled.div`
 position: absolute;
+left: 0px;
+top: 0px;
 display: flex;
-width: 100%;
 flex-direction: column;
 jutify-content: center;
-background-color: gray;
-z-index: 5;
-transition: background 300ms;
+background-color: transparent;
 
 &.open{
     background-color: gray;
@@ -151,6 +164,7 @@ export default function Layout({children}){
                 </nav>
                 <div className={styles.hamwrapper}>
                     <Hamburger className={isOpen ? "open" : ""} onClick={() => setIsOpen(!isOpen)} />
+                        {isOpen && <Toplay/>}
                         {isOpen && 
                         <div className={styles.sidenav}>
                             <a href="/">Home</a>
