@@ -22,10 +22,12 @@ overflow: auto;
 const Background = styled.div`
 position: relative;
 top: 75px;
+background: linear-gradient(135deg , gray, white);
 display: flex;
 flex-direction: column;
 jutify-content: center;
-background-color: transparent;
+overflow: auto;
+z-index: 1;
 `
 const Hamburger = styled.div`
 z-index: 20;
@@ -171,7 +173,7 @@ export default function Layout({children}){
                     }
             </div>
         </head>
-        <Background className={isOpen ? "open" : ""}>
+        <Background>
             <main className={styles.main}>
                 {children}
             </main>
