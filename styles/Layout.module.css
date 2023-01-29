@@ -16,12 +16,13 @@
     min-height: 875px;
 }
  .brand {
-     margin: 0 1rem;
-     float: left;
-     line-height: 75px;
-     text-transform: uppercase;
-     font-size: 1.6em;
-     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: fixed;
+    left: 10%;
+    margin: 0 1rem;
+    line-height: 75px;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
  .brand a {
      color: #b9c2c4;
@@ -58,9 +59,24 @@
     background-color: rgb(74, 90, 109);
 }
 
+.droplist{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 0 20px;
+}
+
+.droplist a{
+    font-size: 1.2rem;
+    color:rgb(208, 208, 208);
+    transition: color 300ms;
+}
 .droplist a:after{
     padding-left: 2px ;
     content: ' \025BE';
+}
+.droplist a:hover{
+    color: rgb(170,150,150);
 }
 
 .overlay{
@@ -140,17 +156,18 @@
 
 .sidenav {
     position: absolute;
-    padding: 30px 20px;
+    padding: 50px 20px;
     top: -10px;
     right: -10px;
-    background: linear-gradient(45deg, #191313, #20221b);
-    background-color: #15110b;
+    background: #24231f;
     border-radius: 3px;
+    box-shadow: inset -10px -5px 20px #040403;
     opacity: 0.95;
     display: flex;
     flex-direction: column;
     justify-content: right;
     line-height: 5rem;
+    min-width: 300px;
     z-index: 10;
 }
 
@@ -178,9 +195,44 @@
     transition: background 300ms;
 }
 
+.navwrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.navwrap li {
+    padding: 0 20px;
+    font-size: 1.2rem;
+}
+
+.navwrap li a, .navwrap li a:visited {
+display: float;
+padding: 0 0px;
+line-height: 75px;
+background: transparent ;
+text-decoration: none;
+}
+
+.navwrap li a{
+background: transparent;
+transition: color 300ms;
+color: #d9d9d9;
+}
+
+.navwrap li a:hover, .navwrap li a:visited:hover {
+color: rgb(170,150,150);
+}
+
 @media only screen and (max-width: 1020px){
     .brandabv{
         display: block;
+        position: absolute;
+        left: 0;
         padding-left: 2rem;
     }
     .brand {
@@ -190,9 +242,13 @@
 
 @media only screen and (max-width: 825px){
     .hamwrapper{
+        position: fixed;
+        right: 0px;
+        padding: 10px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: space-between;
+        z-index: 10;
     }
 }

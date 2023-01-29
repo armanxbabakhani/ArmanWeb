@@ -115,7 +115,7 @@ export default function Layout({children}){
                     <a>AB</a>
                 </div>
                 <nav>
-                    <ul>
+                    <div className={styles.navwrap}>
                         <li>
                             <Link href="/"passHref> 
                                 <a> Home</a> 
@@ -123,10 +123,10 @@ export default function Layout({children}){
                         </li>
                         <li>
                             <Link href="/me" passHref> 
-                                <a> About me </a> 
+                                <a> About </a> 
                             </Link>
                         </li>
-                        <ItemDrop name = 'Publication'>
+                        <ItemDrop name = 'Publications'>
                             <DropdownMenu>
                                 <li>
                                     <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.103.042406">Quantum Error Correction</a>
@@ -157,7 +157,7 @@ export default function Layout({children}){
                                 </li>
                             </DropdownMenu>
                         </ItemDrop>
-                    </ul>
+                    </div>
                 </nav>
                 <div className={styles.hamwrapper}>
                     <Hamburger className={isOpen ? "open" : ""} onClick={() => setIsOpen(!isOpen)} />
@@ -199,17 +199,15 @@ export default function Layout({children}){
 function ItemDrop(props){
     const [isOpen1, setIsOpen1] = useState(false);
     return (
-        <li>
-            <ul className={styles.droplist}>
-                <li>
-                    <a href='#' onClick={() => setIsOpen1(!isOpen1)}>
-                        {props.name}
-                    </a>
-                </li>
-            </ul>
+        <div>
+            <div className={styles.droplist}>
+                <a href='#' onClick={() => setIsOpen1(!isOpen1)}>
+                    {props.name}
+                </a>
+        </div>
             {isOpen1 && props.children}
             {isOpen1 && <div className={styles.overlay} onClick = {() => setIsOpen1(false)}></div>}
-        </li>
+        </div>
     )
 }
 
