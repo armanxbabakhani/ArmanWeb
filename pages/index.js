@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div>
+        <div className={styles.pframe}>
           <Image src="/Arman_portrait_1.jpg" alt="Arman" width="340px" height="290px" className={styles.portrait}/>
         </div>
         <div className={styles.introbox}>

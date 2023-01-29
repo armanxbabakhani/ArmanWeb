@@ -48,15 +48,23 @@
   font-size: large;
   align-items: left;
 }
+
 .portrait{
-  padding: 15px;
-  border: 5px solid #090808;
+  position: absolute;
+  border: 10px transparent;
+  border-radius: 40px;
+}
+
+.pframe{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 10px solid #090808;
   border-radius: 50px;
-  /*align-items: center;*/
+  align-items: center;
   /*max-width: 250px;
   max-height: 230px;*/
 }
-
 .footer {
   background-color: #414555;
 

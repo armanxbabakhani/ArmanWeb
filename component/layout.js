@@ -23,7 +23,7 @@ const Background = styled.div`
 position: absolute;
 left: 0px;
 right: 0px;
-top: 0px;
+top: 75px;
 display: flex;
 flex-direction: column;
 jutify-content: center;
@@ -106,74 +106,74 @@ const Backarrow = styled.div`
 export default function Layout({children}){
     const [isOpen, setIsOpen] = useState(false);
     return <> 
-        <Background className={isOpen ? "open" : ""}>
-            <head className={styles.navigation}>
-                <div className={styles.brand}>
-                    <a>Arman Babakhani</a>
+        <head className={styles.navigation}>
+            <div className={styles.brand}>
+                <a>Arman Babakhani</a>
+            </div>
+            <div className={styles.brandabv}>
+                <a>AB</a>
+            </div>
+            <nav>
+                <div className={styles.navwrap}>
+                    <li>
+                        <Link href="/"passHref> 
+                            <a> Home</a> 
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/me" passHref> 
+                            <a> About </a> 
+                        </Link>
+                    </li>
+                    <ItemDrop name = 'Publications'>
+                        <DropdownMenu>
+                            <li>
+                                <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.103.042406">Quantum Error Correction</a>
+                            </li>
+                            <li>
+                                <a href="https://arxiv.org/abs/2210.14943"> Topological Defects</a>
+                            </li>
+                            <li>
+                                <a href="https://arxiv.org/abs/2206.05310"> Non-abelian Quantum Chaos </a>
+                            </li>
+                            <li>
+                                <a href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-6-6-794&id=413486"> Deep Learning: Microscopy </a>
+                            </li>
+                        </DropdownMenu>
+                    </ItemDrop>
+                    <li>
+                        <a href="/Arman_Resume_web.pdf">CV</a>
+                    </li>
+                    <ItemDrop name = 'Educational'>
+                        <DropdownMenu>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">YouTube Videos</a>
+                            </li>
+                            <li>
+                                <Link href="/tutoring" passHref> 
+                                    <a>Tutoring Experience</a> 
+                                </Link> 
+                            </li>
+                        </DropdownMenu>
+                    </ItemDrop>
                 </div>
-                <div className={styles.brandabv}>
-                    <a>AB</a>
-                </div>
-                <nav>
-                    <div className={styles.navwrap}>
-                        <li>
-                            <Link href="/"passHref> 
-                                <a> Home</a> 
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/me" passHref> 
-                                <a> About </a> 
-                            </Link>
-                        </li>
-                        <ItemDrop name = 'Publications'>
-                            <DropdownMenu>
-                                <li>
-                                    <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.103.042406">Quantum Error Correction</a>
-                                </li>
-                                <li>
-                                    <a href="https://arxiv.org/abs/2210.14943"> Topological Defects</a>
-                                </li>
-                                <li>
-                                    <a href="https://arxiv.org/abs/2206.05310"> Non-abelian Quantum Chaos </a>
-                                </li>
-                                <li>
-                                    <a href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-6-6-794&id=413486"> Deep Learning: Microscopy </a>
-                                </li>
-                            </DropdownMenu>
-                        </ItemDrop>
-                        <li>
-                            <a href="/Arman_Resume_web.pdf">CV</a>
-                        </li>
-                        <ItemDrop name = 'Educational'>
-                            <DropdownMenu>
-                                <li>
-                                    <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">YouTube Videos</a>
-                                </li>
-                                <li>
-                                    <Link href="/tutoring" passHref> 
-                                        <a>Tutoring Experience</a> 
-                                    </Link> 
-                                </li>
-                            </DropdownMenu>
-                        </ItemDrop>
+            </nav>
+            <div className={styles.hamwrapper}>
+                <Hamburger className={isOpen ? "open" : ""} onClick={() => setIsOpen(!isOpen)} />
+                    {isOpen && <Toplay/>}
+                    {isOpen && 
+                    <div className={styles.sidenav}>
+                        <a href="/">Home</a>
+                        <a href="/me">About</a>
+                        <a href="/projects">Publications</a>
+                        <a href="/Arman_Resume_web.pdf">CV</a>
+                        <a href="/tutoring">Tutoring</a>
+                        <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">Videos</a>
                     </div>
-                </nav>
-                <div className={styles.hamwrapper}>
-                    <Hamburger className={isOpen ? "open" : ""} onClick={() => setIsOpen(!isOpen)} />
-                        {isOpen && <Toplay/>}
-                        {isOpen && 
-                        <div className={styles.sidenav}>
-                            <a href="/">Home</a>
-                            <a href="/me">About</a>
-                            <a href="/projects">Publications</a>
-                            <a href="/Arman_Resume_web.pdf">CV</a>
-                            <a href="/tutoring">Tutoring</a>
-                            <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">Videos</a>
-                        </div>
-                        }
-                </div>
-            </head>
+                    }
+            </div>
+        </head>
+        <Background className={isOpen ? "open" : ""}>
             <main className={styles.main}>
                 {children}
             </main>
