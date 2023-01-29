@@ -17,7 +17,7 @@ a {
 
 nav {
   position: fixed;
-  right: 10%;
+  right: 10px;
   display: flex;
   flex-direction: row;
   justify-content: right;
