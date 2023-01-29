@@ -13,11 +13,11 @@
 }
 
 .main{
+    position: relative;
+    padding: 0 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 500px;
-    min-height: 875px;
 }
  .brand {
     position: fixed;

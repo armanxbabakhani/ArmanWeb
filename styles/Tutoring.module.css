@@ -1,9 +1,5 @@
 .container {
-    position: relative;
-    padding: 0 2rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+    display: block;
     align-items: center;
     min-height: 475pt;
     overflow: auto;
@@ -11,7 +7,6 @@
 
   .main {
     padding: 2rem 0;
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,15 +14,14 @@
   }
     
   .logo {
-    position: relative;
-    top: -40px;
+    left: 0px;
     margin: 0 2rem;
-    justify-content: left;
     flex-shrink: 0;
   }
 
   .logotitle {
-    flex: 1;
+    position: relative;
+    margin: 0 0 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -49,9 +43,7 @@
   .logotitle h1{
     display: block;
   }
-  .logo a:hover {
-    filter: brightness(1.4);
-  }
+
   
   .plaintext {
     min-height: 10vh;
@@ -209,18 +201,15 @@
     line-height: 1.5;
   }
   
-  .logo {
-    height: 1em;
-    margin-left: 0.5rem;
-  }
   
-  @media (max-width: 600px) {
+  @media (max-width: 750px) {
     .grid {
       width: 100%;
       flex-direction: column;
     }
     .logotitle{
-      margin: 2rem;
+      justify-content: center;
+      margin: 0 2rem;
     }
     .logotitle h1{
       display: none;

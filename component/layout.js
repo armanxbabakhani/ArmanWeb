@@ -20,9 +20,7 @@ overflow: auto;
 `
 
 const Background = styled.div`
-position: absolute;
-left: 0px;
-right: 0px;
+position: relative;
 top: 75px;
 display: flex;
 flex-direction: column;
