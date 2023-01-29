@@ -28,6 +28,10 @@ flex-direction: column;
 jutify-content: center;
 overflow: auto;
 z-index: 1;
+
+@media (max-width: 600px) {
+    position: absolute;
+}
 `
 const Hamburger = styled.div`
 z-index: 20;
@@ -218,5 +222,4 @@ function DropdownMenu(props){
         </div>
     )
 }
-
 
