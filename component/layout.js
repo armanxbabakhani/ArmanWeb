@@ -20,7 +20,7 @@ overflow: auto;
 `
 
 const Background = styled.div`
-position: absolute;
+position: relative;
 top:75px;
 background: linear-gradient(135deg , gray, white);
 display: flex;

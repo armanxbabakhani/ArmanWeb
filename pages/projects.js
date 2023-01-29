@@ -10,8 +10,8 @@ export default function Me() {
                     PROJECTS
                 </h1>
                 <div className={styles.introbox}>
-                    <h4> I have worked on various topics in quantum information including quantum error correction, 
-                    topological quantum computing, and quantum chaos.</h4>
+                    <p> My work extends on various topics in quantum information including quantum error correction, 
+                    topological quantum computing, and quantum chaos.</p>
                 </div>
                 <div className={styles.grid}>
                     <div className={styles.roundbox}>
