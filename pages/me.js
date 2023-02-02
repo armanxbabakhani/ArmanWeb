@@ -5,15 +5,14 @@ export default function Me() {
     return(
         <div>
             <main className={styles.main}>
-                <h1 className={styles.title}>
-                    ABOUT ME
-                </h1>
+                <div className={styles.title}>
+                    <h1> ABOUT ME </h1>
+                </div>
                 <div className={styles.me}>
                     <p>
-                    I am a researcher and a PhD student, studying quantum information theory. 
-                    I have always had an immense enthusiasm for mathematics and physics. 
-                    My academic journey, however, has been full of explorations along various paths in engineering and chemistry. I have received a Bachelor &apos; s degree in Engineering physics
-                    from UC Berkeley and a Masters of Science in Chemistry from University of California, Santa Barbara. Check out my <a href="/Arman_Resume_web.pdf" > CV </a>.
+                    I am a researcher and a PhD student in quantum information theory. 
+                    I have had a persistent and deep-seated passion for mathematics and physics since an early age. My academic journey, however, has been full of explorations along various paths in engineering and chemistry. I have received a Bachelor&apos;s degree in Engineering physics
+                    from UC Berkeley and a Masters of Science in Chemistry from University of California, Santa Barbara. Click, to see my <a href="/Arman_Resume_web.pdf" > CV </a>.
                     </p>
                     <p>
                     Learning through teaching has been a very fruitful enterprise for me as an intellectually curious researcher. Tutoring has been an opportunity to not only support myself during my undergraduate studies, but be able to expand my knowledge and understanding of the topics I&apos;ve taught. 

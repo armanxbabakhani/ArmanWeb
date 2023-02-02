@@ -151,11 +151,11 @@ export default function Layout({children}){
                     <ItemDrop name = 'Educational'>
                         <DropdownMenu>
                             <li>
-                                <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">YouTube Videos</a>
+                                <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">Videos</a>
                             </li>
                             <li>
                                 <Link href="/tutoring" passHref> 
-                                    <a>Tutoring Experience</a> 
+                                    <a>Tutoring</a> 
                                 </Link> 
                             </li>
                         </DropdownMenu>
@@ -208,7 +208,7 @@ function ItemDrop(props){
                 <a href='#' onClick={() => setIsOpen1(!isOpen1)}>
                     {props.name}
                 </a>
-        </div>
+            </div>
             {isOpen1 && props.children}
             {isOpen1 && <div className={styles.overlay} onClick = {() => setIsOpen1(false)}></div>}
         </div>
