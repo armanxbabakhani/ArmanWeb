@@ -6,7 +6,7 @@
 
 .main {
   min-height: 25vh;
-  padding: 1rem 10%;
+  padding: 1rem 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,7 +147,7 @@
   /*border: 1px solid #251927;*/
   border-radius: 5px; 
   max-width: 750px;
-  font-family: 'Robooto', Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .introbox h1{
@@ -194,13 +194,14 @@
   padding: 1rem 2rem;
   text-align: left;
   color: inherit;
-  font-family: 'Roboto' , Helvetica, 'Times New Roman', Times;
+  font-family: Georgia , Helvetica, 'Times New Roman', Times;
   font-size: 1.5rem;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 1200px;
 }
 .me p{
   font-size: 1.3rem;
+  line-height: 1.25;
 }
 .me a {
   color: rgb(167, 93, 56);
