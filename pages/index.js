@@ -1,28 +1,10 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Script from 'next/script'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <html>
-      <Head>
-        <title>Arman Babakhani</title>
-        <meta name="personal website" content="main personal page, initial-scale=1.0" />
-        <link rel="icon" href="/Armanlogo.png" />
-      </Head>
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11087720521" strategy="afterInteractive"></Script>
-          <Script id="google-analytics" strategy="afterInteractive">
-          {
-              `window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-  
-              gtag('config', 'AW-11087720521');
-              `
-          }
-      </Script>
       <div className={styles.container}>
         <main className={styles.main}>
           <div className={styles.pframe}>
