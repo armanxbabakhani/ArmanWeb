@@ -5,17 +5,6 @@ import Script from 'next/script'
 function MyApp({ Component, pageProps }) {
   return( 
       <Layout>
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11087720521" strategy="afterInteractive"></Script>
-        <Script id="google-analytics" strategy="afterInteractive">
-          {
-            `window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-  
-            gtag('config', 'AW-11087720521');
-            `
-          }
-        </Script>
         <Component {...pageProps} /> 
       </Layout>
 )
