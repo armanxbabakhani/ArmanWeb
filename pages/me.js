@@ -5,17 +5,6 @@ import Script from 'next/script'
 export default function Me() {
     return(
         <div>
-            <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11087720521" strategy="afterInteractive"></Script>
-            <Script id="google-analytics" strategy="afterInteractive">
-            {
-                `window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-    
-                gtag('config', 'AW-11087720521');
-                `
-            }
-            </Script>
             <Head>
                 <title>Arman Babakhani</title>
                 <meta name="about me" content="my background and interests, initial-scale=1.0" />

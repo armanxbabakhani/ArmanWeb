@@ -7,17 +7,6 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <html>
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11087720521" strategy="afterInteractive"></Script>
-        <Script id="google-analytics" strategy="afterInteractive">
-          {
-            `window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-  
-            gtag('config', 'AW-11087720521');
-            `
-          }
-        </Script>
       <Head>
         <title>Arman Babakhani</title>
         <meta name="personal website" content="main personal page, initial-scale=1.0" />
