@@ -38,7 +38,7 @@ z-index: 20;
 width: 40px;
 height: 5px;
 background-color: #BCBCBC;
-margin: 6px 0;
+margin: 0 0;
 border-radius: 3px;
 transition: all 0.5s ease-in-out;
 
@@ -162,8 +162,8 @@ export default function Layout({children}){
                     </ItemDrop>
                 </div>
             </nav>
-            <div className={styles.hamwrapper}>
-                <Hamburger className={isOpen ? "open" : ""} onClick={() => setIsOpen(!isOpen)} />
+            <div className={styles.hamwrapper} onClick={() => setIsOpen(!isOpen)}>
+                <Hamburger className={isOpen ? "open" : ""} />
                     {isOpen && <Toplay/>}
                     {isOpen && 
                     <div className={styles.sidenav}>
