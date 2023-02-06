@@ -8,7 +8,7 @@ export default function Home() {
     <html>
       <Head>
         <title>Arman Babakhani</title>
-        <meta name="personal website" content="porjects and services, initial-scale=1.0" />
+        <meta name="personal website" content="main personal page, initial-scale=1.0" />
         <link rel="icon" href="/Armanlogo.png" />
       </Head>
       <div className={styles.container}>

@@ -4,6 +4,11 @@ import styles from '../styles/Home.module.css'
 export default function Me() {
     return(
         <div>
+            <Head>
+                <title>Arman Babakhani</title>
+                <meta name="about me" content="my background and interests, initial-scale=1.0" />
+                <link rel="icon" href="/Armanlogo.png" />
+            </Head>
             <main className={styles.main}>
                 <div className={styles.title}>
                     <h1> ABOUT ME </h1>

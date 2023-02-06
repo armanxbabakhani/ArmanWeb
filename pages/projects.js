@@ -2,9 +2,14 @@ import Link from 'next/link'
 import styles from '../styles/Projects.module.css'
 import Image from 'next/image'
 
-export default function Me() {
+export default function Projects() {
     return(
         <div>
+            <Head>
+                <title>Arman Babakhani</title>
+                <meta name="personal website" content="projects, initial-scale=1.0" />
+                <link rel="icon" href="/Armanlogo.png" />
+            </Head>
             <main className={styles.main}>
                 <div className={styles.title}>
                     <h1>PROJECTS</h1>

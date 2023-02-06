@@ -5,6 +5,11 @@ import Image from 'next/image'
 export default function Tutoring() {
     return(
         <body className={styles.container}>
+            <Head>
+                <title>Arman Babakhani</title>
+                <meta name="personal website" content="Tutoring, initial-scale=1.0" />
+                <link rel="icon" href="/Armanlogo.png" />
+            </Head>
             <div className={styles.main}>
                 <div className={styles.logotitle}>
                     <div className={styles.logo}>
