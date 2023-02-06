@@ -10,7 +10,7 @@ export default function Tutoring() {
                 <title>Arman Babakhani</title>
                 <meta name="personal website" content="Tutoring, initial-scale=1.0" />
                 <link rel="icon" href="/Armanlogo.png" />
-            </Head>
+            </Head> 
             <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11087720521" strategy="afterInteractive"></Script>
             <Script id="google-analytics" strategy="afterInteractive">
             {
