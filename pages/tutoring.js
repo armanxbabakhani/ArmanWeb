@@ -6,18 +6,18 @@ import Script from 'next/script'
 export default function Tutoring() {
     return(
         <body className={styles.container}>
-            <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11087720521" strategy="afterInteractive"></Script>
-            <Script id="google-analytics" strategy="afterInteractive">
-            {
-                `window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-    
-                gtag('config', 'AW-11087720521');
-                `
-            }
-            </Script>
             <Head>
+                <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11087720521" strategy="afterInteractive"></Script>
+                <Script id="google-analytics" strategy="afterInteractive">
+                {
+                    `window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+        
+                    gtag('config', 'AW-11087720521');
+                    `
+                }
+                </Script>
                 <title>Arman Babakhani</title>
                 <meta name="personal website" content="Tutoring, initial-scale=1.0" />
                 <link rel="icon" href="/Armanlogo.png" />
