@@ -115,7 +115,7 @@ export default function Layout({children}){
                 <a>Arman Babakhani</a>
             </div>
             <div className={styles.brandabv}>
-                <a>AB</a>
+                <a href="./">AB</a>
             </div>
             <nav>
                 <div className={styles.navwrap}>

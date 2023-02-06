@@ -1,14 +1,14 @@
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Projects.module.css'
 import Image from 'next/image'
 
 export default function Me() {
     return(
         <div>
             <main className={styles.main}>
-                <h1 className={styles.title}>
-                    PROJECTS
-                </h1>
+                <div className={styles.title}>
+                    <h1>PROJECTS</h1>
+                </div>
                 <div className={styles.introbox}>
                     <p> My work extends on various topics in quantum information including quantum error correction, 
                     topological quantum computing, and quantum chaos.</p>

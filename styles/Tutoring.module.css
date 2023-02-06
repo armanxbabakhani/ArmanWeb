@@ -15,13 +15,12 @@
     
   .logo {
     left: 0px;
-    margin: 0 2rem;
+    margin: 0 2rem 1rem;
     flex-shrink: 0;
   }
 
   .logotitle {
     position: relative;
-    margin: 0 0 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
