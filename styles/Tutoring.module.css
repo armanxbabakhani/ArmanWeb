@@ -89,6 +89,16 @@
     text-indent: -25px;
     list-style-position: inside;
   }
+
+  .description li a{
+    color:rgb(167, 93, 56);
+    cursor: pointer;
+    transition: color 300ms;
+  }
+
+  .description li a:hover{
+    color: #58431f;
+  }
   
   .description h2{
     font-weight: bold;

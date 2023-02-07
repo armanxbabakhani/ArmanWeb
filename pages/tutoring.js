@@ -23,6 +23,7 @@ export default function Tutoring() {
                     <li> More than eight years of experience in teaching Calculus, College physics and Chemistry.</li>
                     <li> Experience in teaching undergraduate courses as a Graduate Teaching assistant in UC Santa Barbara.</li>
                     <li> For a detailed review of my previous tutoring experiences and student reviews, check out my tutor profile on <a href="https://www.wyzant.com/Tutors/ArmanB"> Wyzant.com </a></li>
+                    <li> Check out my educational videos on my <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">YouTube</a> page</li>
                 </div>
             </div>
         </body>
