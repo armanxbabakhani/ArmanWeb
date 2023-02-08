@@ -29,9 +29,6 @@ jutify-content: center;
 overflow: auto;
 z-index: 1;
 
-@media (max-width: 600px) {
-    position: absolute;
-}
 `
 const Hamburger = styled.div`
 z-index: 20;
@@ -178,23 +175,19 @@ export default function Layout({children}){
             </div>
         </head>
         <Background>
-            <main className={styles.main}>
-                {children}
-            </main>
-            <footer>
-                <div className={styleshome.footer}>
-                    <p> Connect with me: </p>
-                    <a href="https://www.linkedin.com/in/arman-babakhani/"> 
-                        <Image src="/linkedin.png" alt="linkedin" width="50px" height="50px" /> 
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA"> 
-                        <Image src="/youtubetrans.png" alt="youtube" width="70px" height="70px" /> 
-                    </a>
-                    <a href="https://github.com/armanxbabakhani">
-                        <Image src="/github.png" alt="github" width="50px" height="50px" /> 
-                    </a>
-                </div>
-            </footer>
+            {children}
+            <div className={styleshome.footer}>
+                <p> Connect with me: </p>
+                <a href="https://www.linkedin.com/in/arman-babakhani/"> 
+                    <Image src="/linkedin.png" alt="linkedin" width="50px" height="50px" /> 
+                </a>
+                <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA"> 
+                    <Image src="/youtubetrans.png" alt="youtube" width="70px" height="70px" /> 
+                </a>
+                <a href="https://github.com/armanxbabakhani">
+                    <Image src="/github.png" alt="github" width="50px" height="50px" /> 
+                </a>
+            </div>
         </Background>
             
     </>

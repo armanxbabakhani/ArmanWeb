@@ -65,23 +65,25 @@
   max-height: 230px;*/
 }
 .footer {
-  background-color: #414555;
+  background-color: #414246;
+  position: relative;
+  width: 100%;
   display: flex;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   border-top: 2px solid #090808;
   justify-content: center;
-  min-width: 500px;
-  /* align-items: center; */
 }
 
 .footer p {
   display: flex;
+  font-family: monospace;
+  font-size: 18px;
   color:rgb(204, 200, 198);
   justify-content: center;
   transition: filter 200ms;
   align-items: center;
   flex-grow: 1;
-  max-width: 150px;
+  max-width: 200px;
 }
 
 .footer a {
