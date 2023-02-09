@@ -151,7 +151,7 @@ export default function Layout({children}){
                                 <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">Videos</a>
                             </li>
                             <li>
-                                <Link href="/tutoring_v2" passHref> 
+                                <Link href="/tutoring" passHref> 
                                     <a>Tutoring</a> 
                                 </Link> 
                             </li>
@@ -168,7 +168,7 @@ export default function Layout({children}){
                         <a href="/me">About</a>
                         <a href="/projects">Publications</a>
                         <a href="/Arman_Resume_web.pdf">CV</a>
-                        <a href="/tutoring_v2">Tutoring</a>
+                        <a href="/tutoring">Tutoring</a>
                         <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">Videos</a>
                     </div>
                     }
