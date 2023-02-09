@@ -21,7 +21,7 @@ height: 180px;
 width: 340px;
 border-radius: 15px;
 box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-filter: brightness(40%);
+filter: brightness(60%);
 transition: all 300ms;
 
 :hover{
@@ -30,8 +30,9 @@ transition: all 300ms;
 }
 
 &.clicked{
-    height: 225px;
+    align-items: left;
     width: 400px;
+    height: auto;
     filter: brightness(70%);
     background: rgb(41,41,41);
     cursor: zoom-out;
@@ -42,8 +43,7 @@ transition: all 300ms;
     width: 250px;
 
     &.clicked{
-        height: 180px;
-        width: 300px;
+        width: 325px;
     }
 
 
@@ -64,38 +64,43 @@ const Title = styled.div`
 `;
 
 const Description = styled.div`
+  display: flex;
+  flex-wrap: wrap;
   color: white;
-  font-size: 1.1rem;
-  padding: 15px 35px 0;
-  list-style-position: inside;
-  text-indent: -20px;
+  font-size: 1.35rem;
+  line-height: 1.75rem;
+  margin: 15px 25px;
+  line-style-position: outside;
   font-family: Segoe UI;
-  position: relative;
-  text-align: left;
-  mix-blend-mode: normal;
   @media (max-width: 600px) {
-    font-size: 0.85rem;
-    padding: 15px 30px 0;
+    font-size: 1.1rem;
+    margin: 15px;
   }
 `;
 
-const StyledLi = styled.div`
-list-style-type: square;
-position: relative;
-text-align: left;
-padding: 10px 15px; 
-color: #2c68ac;
-font-size: 125%;
+const StyledCont = styled.div`
+display: flex;
+flex-direction: row;
+align-content: space-around;
+margin: 10px 20px;
+font-size: 1.35rem;
 font-family: Segoe UI;
 cursor: pointer;
 @media (max-width: 600px) {
-    font-size: 100%;
-    padding: 10px;
+    font-size: 1.1rem;
   }
 `
+const StyledText = styled.div`
+color: white;
+margin: 8px 5px 0;
+text-align: center;
+`
+
 const Contact = styled.div`
 font-size: 120%;
-padding: 15% 10px;
+font-family: Segoe UI;
+padding: 5% 5px 10%;
+maring: 0 20px;
 display: flex;
 flex-wrap: wrap;
 justify-content: left;
@@ -113,15 +118,15 @@ export default function Tutoring() {
             </div>
             <div className={styles.background}>
                 <div className={styles.iconwrap}>
-                    <Icon_background img="experience_icon.png" curs="zoom-in" className={isClicked ? "clicked" : ""} onClick={()=> setIsClicked(!isClicked)}>
-                        {isClicked ? <Description> <li> A PhD Candidate at USC in theoretical Physics</li> <li>Author of various research papers in the field of quantum information.</li> <li> More than 8 years of experience in teaching AP Calculus, Physics, and Chemistry. More than hundreds of students in advanced topics in mathematics, physics, and engineering courses.</li></Description> : <Title> Qualifications </Title>}
+                    <Icon_background img="experience_icon_low.png" curs="zoom-in" className={isClicked ? "clicked" : ""} onClick={()=> setIsClicked(!isClicked)}>
+                        {isClicked ? <Description> <li> A PhD Candidate at USC in theoretical Physics</li> <li>Author of various research papers in the field of quantum information.</li> <li> More than 8 years of experience. More than hundreds of students in advanced topics in mathematics, physics, and engineering courses.</li></Description> : <Title> Qualifications </Title>}
                     </Icon_background>
                     <Link href="https://www.wyzant.com/Tutors/ArmanB">
-                        <Icon_background img="/reviews_icon.png" curs="pointer">
+                        <Icon_background img="/reviews_icon_low.png" curs="pointer">
                             <Title> Reviews </Title>
                         </Icon_background>
                     </Link>
-                    <Icon_background img="subjects_icon.png" curs="zoom-in" className={isClicked2 ? "clicked" : ""} onClick={()=> setIsClicked2(!isClicked2)}>
+                    <Icon_background img="subjects_icon_low.png" curs="zoom-in" className={isClicked2 ? "clicked" : ""} onClick={()=> setIsClicked2(!isClicked2)}>
                     {isClicked2 ? <Description> <li>AP Calculus and Physics</li> <li>AP Chemistry</li> <li>Undergraduate Mathematics</li> <li>Undergraduate and Graduate Physics</li> <li> General Undergraduate Chemistry</li> <li> Introductory Computer-Science </li> <li> Additional Engineering Courses </li></Description> : <Title> Subjects </Title>}
                     </Icon_background>
                     <Link href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">
@@ -130,7 +135,27 @@ export default function Tutoring() {
                         </Icon_background>
                     </Link>
                     <Icon_background img="contact_icon_1.png" curs="zoom-in" className={isClicked3 ? "clicked" : ""} onClick={()=> setIsClicked3(!isClicked3)}>
-                        {isClicked3 ? <Contact><Description> <li>Email:<a href="mailto:armanxbabakhani@gmail.com">armanxbabakhani(at)gmail.com</a></li> </Description> <StyledLi><a href="https://www.linkedin.com/in/arman-babakhani/" className="cursor: pointer; color: #2c6ab0;"><li>LinkedIn</li></a></StyledLi> </Contact>: <Title> Contact </Title>}
+                        {isClicked3 ? 
+                            <Contact>
+                                <StyledCont>
+                                    <Image src="/email_logo.png" width="40px" height="40px"/>
+                                    <a href="mailto:armanxbabakhani@gmail.com">
+                                        <StyledText>
+                                        armanxbabakhani(at)gmail.com
+                                        </StyledText>
+                                    </a> 
+                                </StyledCont>
+                                <StyledCont>
+                                    <Image src="/linkedin.png" width="40px" height="40px"/>
+                                    <a href="https://www.linkedin.com/in/arman-babakhani/">
+                                        <StyledText>
+                                        LinkedIn
+                                        </StyledText>
+                                    </a> 
+                                </StyledCont>
+                                
+                                
+                            </Contact>: <Title> Contact </Title>}
                     </Icon_background>
                 </div>
             </div>
