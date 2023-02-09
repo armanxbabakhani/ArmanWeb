@@ -52,7 +52,7 @@ transition: all 300ms;
 const Title = styled.div`
   color: white;
   font-size: 1.5rem;
-  font-family: -apple-system;
+  font-family: Segoe UI;
   position: relative;
   bottom: -70%;
   text-align: center;
