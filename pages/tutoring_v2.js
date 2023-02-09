@@ -95,7 +95,7 @@ cursor: pointer;
 `
 const Contact = styled.div`
 font-size: 120%;
-padding: 70px 10px;
+padding: 40px 10px;
 display: flex;
 flex-wrap: wrap;
 justify-content: left;
