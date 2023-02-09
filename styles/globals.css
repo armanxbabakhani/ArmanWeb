@@ -21,7 +21,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: right;
-  margin: 0 1.75rem;
+  margin: 0 5%;
   font-family: monospace;
 }
 

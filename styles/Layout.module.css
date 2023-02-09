@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0 0 100px;
+    align-items: center;
     z-index: 2;
 }
 
@@ -47,10 +47,11 @@
 }
 
 .navdropdown {
-    position: absolute;
-    top: 60px;
+    position: fixed;
+    top: 75px;
+    right: 20px;
+    transform: translateX(-50%);
     background: rgb(79, 85, 99);
-    transform: translateX(-10%);
     transition: background 300ms;
     padding: 0 10px;
     z-index: 8;
@@ -216,13 +217,13 @@
 
 .navwrap li {
     padding: 0 20px;
+    text-indent: -10px;
     font-size: 1.2rem;
 }
 
 .navwrap li a, .navwrap li a:visited {
-display: float;
-padding: 0 0px;
-line-height: 75px;
+padding: 0;
+line-height: 60px;
 background: transparent ;
 text-decoration: none;
 }
@@ -236,6 +237,7 @@ color: #d9d9d9;
 .navwrap li a:hover, .navwrap li a:visited:hover {
 color: rgb(170,150,150);
 }
+
 
 @media only screen and (max-width: 1080px){
     .brandabv{

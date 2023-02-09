@@ -5,6 +5,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styled from 'styled-components';
 
+
+            
 const Toplay = styled.div`
 position: fixed;
 left:0;
@@ -28,7 +30,6 @@ flex-direction: column;
 jutify-content: center;
 overflow: auto;
 z-index: 1;
-
 `
 const Hamburger = styled.div`
 z-index: 20;
@@ -70,43 +71,11 @@ transition: all 0.5s ease-in-out;
     }
 }
 `;
-const Backarrow = styled.div`
-    /* styles for the button */
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 8px 16px;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    color: #fff;
-    background-color: black;
-    border-radius: 4px;
-    border: none;
-    
-    /* styles for the arrow */
-    position: relative;
-    width: 0;
-    height: 0;
-    margin-right: 8px;
-    }
-    
-    &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -5px;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent transparent #fff;
-    }`;
 
 export default function Layout({children}){
     const [isOpen, setIsOpen] = useState(false);
-    return <> 
+    return ( 
+        <>
         <head className={styles.navigation}>
             <div className={styles.brand}>
                 <a>Arman Babakhani</a>
@@ -129,7 +98,7 @@ export default function Layout({children}){
                     <ItemDrop name = 'Publications'>
                         <DropdownMenu>
                             <li>
-                                <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.103.042406">Quantum Error Correction</a>
+                                <Link href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.103.042406" passHref><a>Quantum Error Correction</a></Link>
                             </li>
                             <li>
                                 <a href="https://arxiv.org/abs/2210.14943"> Topological Defects</a>
@@ -161,18 +130,18 @@ export default function Layout({children}){
             </nav>
             <div className={styles.hamwrapper} onClick={() => setIsOpen(!isOpen)}>
                 <Hamburger className={isOpen ? "open" : ""} />
-                    {isOpen && <Toplay/>}
-                    {isOpen && 
-                    <div className={styles.sidenav}>
-                        <a href="/">Home</a>
-                        <a href="/me">About</a>
-                        <a href="/projects">Publications</a>
-                        <a href="/Arman_Resume_web.pdf">CV</a>
-                        <a href="/tutoring">Tutoring</a>
-                        <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">Videos</a>
-                    </div>
-                    }
+                {isOpen && <Toplay/>}
+                {isOpen && 
+                <div className={styles.sidenav}>
+                    <Link href="/" passHref><a>Home</a></Link>
+                    <Link href="/me" passHref><a>About</a></Link>
+                    <Link href="/Arman_Resume_web.pdf" passHref><a>CV</a></Link>
+                    <Link href="/tutoring" passHref><a>Tutoring</a></Link>
+                    <Link href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA" passHref><a>Videos</a></Link>
+                </div>
+                }
             </div>
+
         </head>
         <Background>
             {children}
@@ -189,8 +158,8 @@ export default function Layout({children}){
                 </a>
             </div>
         </Background>
-            
-    </>
+        </>
+    )
 }
 
 function ItemDrop(props){

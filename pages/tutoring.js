@@ -22,7 +22,8 @@ width: 340px;
 border-radius: 15px;
 box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 filter: brightness(60%);
-transition: all 300ms;
+transition: all 300ms ease-in-out;
+
 
 :hover{
     filter: brightness(80%);
@@ -100,7 +101,7 @@ const Contact = styled.div`
 font-size: 120%;
 font-family: Segoe UI;
 padding: 5% 5px 10%;
-maring: 0 20px;
+margin: 0 20px;
 display: flex;
 flex-wrap: wrap;
 justify-content: left;
@@ -121,7 +122,7 @@ export default function Tutoring() {
                     <Icon_background img="experience_icon_low.png" curs="zoom-in" className={isClicked ? "clicked" : ""} onClick={()=> setIsClicked(!isClicked)}>
                         {isClicked ? <Description> <li> A PhD Candidate at USC in theoretical Physics</li> <li>Author of various research papers in the field of quantum information.</li> <li> More than 8 years of experience. More than hundreds of students in advanced topics in mathematics, physics, and engineering courses.</li></Description> : <Title> Qualifications </Title>}
                     </Icon_background>
-                    <Link href="https://www.wyzant.com/Tutors/ArmanB">
+                    <Link href="https://www.wyzant.com/Tutors/ArmanB" passHref>
                         <Icon_background img="/reviews_icon_low.png" curs="pointer">
                             <Title> Reviews </Title>
                         </Icon_background>
@@ -129,7 +130,7 @@ export default function Tutoring() {
                     <Icon_background img="subjects_icon_low.png" curs="zoom-in" className={isClicked2 ? "clicked" : ""} onClick={()=> setIsClicked2(!isClicked2)}>
                     {isClicked2 ? <Description> <li>AP Calculus and Physics</li> <li>AP Chemistry</li> <li>Undergraduate Mathematics</li> <li>Undergraduate and Graduate Physics</li> <li> General Undergraduate Chemistry</li> <li> Introductory Computer-Science </li> <li> Additional Engineering Courses </li></Description> : <Title> Subjects </Title>}
                     </Icon_background>
-                    <Link href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">
+                    <Link href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA" passHref>
                         <Icon_background img="videos_icon.png" curs="pointer">
                             <Title> Videos </Title>
                         </Icon_background>

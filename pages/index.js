@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <html>
+    <>
       <div className={styles.container}>
         <main className={styles.main}>
           <div className={styles.pframe}>
@@ -46,10 +46,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <a
-              href="#!"
-              className={styles.card}
-            >
+            <a href="/projects" className={styles.card}>
               <h2>Notes and Ongoing Projects &rarr;</h2>
               <p>
                 Some of my ongoing projects and some notes on miscellaneous topics.
@@ -58,7 +55,7 @@ export default function Home() {
           </div>
         </main>
       </div>
-    </html>
+    </>
     
   )
 }
