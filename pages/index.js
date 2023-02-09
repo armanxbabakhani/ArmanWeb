@@ -46,12 +46,14 @@ export default function Home() {
               </Link>
             </div>
 
-            <a href="/projects" className={styles.card}>
-              <h2>Notes and Ongoing Projects &rarr;</h2>
-              <p>
-                Some of my ongoing projects and some notes on miscellaneous topics.
-              </p>
-            </a>
+            <div className={styles.card}>
+              <Link href="/projects" passHref>
+                <a>
+                  <h2>Notes and Ongoing Projects &rarr;</h2>
+                  <p>Some of my ongoing projects and some notes on miscellaneous topics.</p>
+                </a>
+              </Link>
+            </div>
           </div>
         </main>
       </div>
