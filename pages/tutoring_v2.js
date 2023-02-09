@@ -42,7 +42,7 @@ transition: all 300ms;
     width: 250px;
 
     &.clicked{
-        height: 175px;
+        height: 180px;
         width: 300px;
     }
 
@@ -130,7 +130,7 @@ export default function Tutoring() {
                         </Icon_background>
                     </Link>
                     <Icon_background img="contact_icon_1.png" curs="zoom-in" className={isClicked3 ? "clicked" : ""} onClick={()=> setIsClicked3(!isClicked3)}>
-                        {isClicked3 ? <Contact><Description> <li>Email: armanxbabakhani(at)gmail.com</li> </Description> <StyledLi><a href="https://www.linkedin.com/in/arman-babakhani/" className="cursor: pointer; color: #2c6ab0;"><li>LinkedIn</li></a></StyledLi> </Contact>: <Title> Contact </Title>}
+                        {isClicked3 ? <Contact><Description> <li>Email:<a href="mailto:armanxbabakhani@gmail.com">armanxbabakhani(at)gmail.com</a></li> </Description> <StyledLi><a href="https://www.linkedin.com/in/arman-babakhani/" className="cursor: pointer; color: #2c6ab0;"><li>LinkedIn</li></a></StyledLi> </Contact>: <Title> Contact </Title>}
                     </Icon_background>
                 </div>
             </div>
