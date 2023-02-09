@@ -75,7 +75,7 @@ const Description = styled.div`
   mix-blend-mode: normal;
   @media (max-width: 600px) {
     font-size: 0.85rem;
-    padding: 15px;
+    padding: 15px 30px 0;
   }
 `;
 
@@ -89,13 +89,13 @@ font-size: 125%;
 font-family: Segoe UI;
 cursor: pointer;
 @media (max-width: 600px) {
-    font-size: 0.85rem;
-    padding: 15px;
+    font-size: 100%;
+    padding: 10px;
   }
 `
 const Contact = styled.div`
 font-size: 120%;
-padding: 40px 10px;
+padding: 15% 10px;
 display: flex;
 flex-wrap: wrap;
 justify-content: left;
