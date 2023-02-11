@@ -20,6 +20,7 @@
 }
  .brand {
     position: fixed;
+    display: block;
     left: 10%;
     margin: 0 1rem;
     line-height: 75px;
