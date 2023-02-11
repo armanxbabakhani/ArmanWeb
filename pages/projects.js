@@ -25,7 +25,7 @@ export default function Projects() {
 
                     <div className={styles.roundbox}>
                         <h2>Topological Quantum Computing</h2>
-                        <p> The mathematical framework of non-abelian anyons with topological defects can be explored using a framework known as G-crossed modular tensor categories. In this work, in collaboration with Dr. Parsa Bonderson from Microsoft, I show
+                        <p> The mathematical framework of non-abelian anyons with topological defects can be explored using a framework known as G-crossed modular tensor categories. In this work, we show
                             an intrinsic connection between topology of higher genus surfaces and fusion categories of topological defects.
                             {' '}
                             <h4> Publication: <a href="https://arxiv.org/abs/2210.14943" > arXiV </a> </h4>

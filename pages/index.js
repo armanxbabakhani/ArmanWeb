@@ -11,14 +11,11 @@ export default function Home() {
             <Image src="/Arman_portrait_1.jpg" alt="Arman" width="340px" height="290px" className={styles.portrait}/>
           </div>
           <div className={styles.introbox}>
-            <h3>Welcome! I am</h3>
-            <h1>
-              Arman Babakhani 
-            </h1>
-            <h4>I am a researcher and a PhD student in quantum information theory and quantum algorithms.</h4>
+            <h3> Welcome! I am </h3>
+            <h1> Arman Babakhani </h1>
+            <h4> I am a researcher and a PhD student in quantum information theory and quantum algorithms.</h4>
           </div>
           <div className={styles.grid}>
-            {' '}
             <div  className={styles.card}>
               <Link href="/me"passHref>
                 <a>
