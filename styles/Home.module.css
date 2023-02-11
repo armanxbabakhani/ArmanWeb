@@ -69,9 +69,11 @@
   position: relative;
   width: 100%;
   display: flex;
-  padding: 1.5rem 0;
-  border-top: 2px solid #090808;
+  flex-direction: row;
   justify-content: center;
+  align-content: center;
+  padding: 1.1rem 0;
+  border-top: 3px solid #090808;
 }
 
 .footer p {

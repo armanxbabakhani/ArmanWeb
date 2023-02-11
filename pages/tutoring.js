@@ -16,13 +16,14 @@ z-index: 1;
 const Icon_background = styled.div`
 background-image: url(${props => props.img});
 background-size: cover;
+background-color: black;
 margin: 10px 20px;
 height: 180px;
 width: 340px;
 border-radius: 15px;
 box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 filter: brightness(60%);
-transition: all 300ms ease-in-out;
+transition: all 500ms ease-in-out;
 
 
 :hover{
@@ -44,7 +45,7 @@ transition: all 300ms ease-in-out;
     width: 250px;
 
     &.clicked{
-        width: 325px;
+        width: 350px;
     }
 
 
@@ -100,8 +101,8 @@ text-align: center;
 const Contact = styled.div`
 font-size: 120%;
 font-family: Segoe UI;
-padding: 5% 5px 10%;
-margin: 0 20px;
+padding: 5% 0px 10%;
+margin: 0 5px;
 display: flex;
 flex-wrap: wrap;
 justify-content: left;
@@ -140,19 +141,19 @@ export default function Tutoring() {
                             <Contact>
                                 <StyledCont>
                                     <Image src="/email_logo.png" width="40px" height="40px"/>
-                                    <a href="mailto:armanxbabakhani@gmail.com">
+                                    <Link href="mailto:armanxbabakhani@gmail.com" passHref>
                                         <StyledText>
                                         armanxbabakhani(at)gmail.com
                                         </StyledText>
-                                    </a> 
+                                    </Link> 
                                 </StyledCont>
                                 <StyledCont>
                                     <Image src="/linkedin.png" width="40px" height="40px"/>
-                                    <a href="https://www.linkedin.com/in/arman-babakhani/">
+                                    <Link href="https://www.linkedin.com/in/arman-babakhani/" passHref>
                                         <StyledText>
                                         LinkedIn
                                         </StyledText>
-                                    </a> 
+                                    </Link> 
                                 </StyledCont>
                                 
                                 

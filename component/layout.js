@@ -101,23 +101,23 @@ export default function Layout({children}){
                                 <Link href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.103.042406" passHref><a>Quantum Error Correction</a></Link>
                             </li>
                             <li>
-                                <a href="https://arxiv.org/abs/2210.14943"> Topological Defects</a>
+                                <Link href="https://arxiv.org/abs/2210.14943" passHref> <a>Topological Defects</a> </Link>
                             </li>
                             <li>
-                                <a href="https://arxiv.org/abs/2206.05310"> Non-abelian Quantum Chaos </a>
+                                <Link href="https://arxiv.org/abs/2206.05310" passHref> <a>Non-abelian Quantum Chaos </a> </Link>
                             </li>
                             <li>
-                                <a href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-6-6-794&id=413486"> Deep Learning: Microscopy </a>
+                                <Link href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-6-6-794&id=413486" passHref> <a>Deep Learning: Microscopy </a></Link>
                             </li>
                         </DropdownMenu>
                     </ItemDrop>
                     <li>
-                        <a href="/Arman_Resume_web.pdf">CV</a>
+                        <Link href="/Arman_Resume_web.pdf" passHref><a>CV</a></Link>
                     </li>
                     <ItemDrop name = 'Educational'>
                         <DropdownMenu>
                             <li>
-                                <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA">Videos</a>
+                                <Link href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA" passHref> <a>Videos</a> </Link>
                             </li>
                             <li>
                                 <Link href="/tutoring" passHref> 
@@ -141,7 +141,6 @@ export default function Layout({children}){
                 </div>
                 }
             </div>
-
         </head>
         <Background>
             {children}
