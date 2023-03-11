@@ -155,8 +155,6 @@ export default function Tutoring() {
                                         </StyledText>
                                     </Link> 
                                 </StyledCont>
-                                
-                                
                             </Contact>: <Title> Contact </Title>}
                     </Icon_background>
                 </div>
