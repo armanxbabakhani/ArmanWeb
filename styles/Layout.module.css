@@ -12,6 +12,10 @@
     z-index: 2;
 }
 
+.container {
+    width: 100%;
+  }
+
 .main{
     display: flex;
     flex-direction: column;

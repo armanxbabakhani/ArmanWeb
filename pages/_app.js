@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import React from "react"
 import Head from 'next/head'
 import Layout from "../component/layout"
 import Script from 'next/script'
