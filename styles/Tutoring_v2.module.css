@@ -35,7 +35,6 @@
 
 }
 .text p{
-    font-size: large;
     text-align: center;
     font-size: 20px;
     margin: 0;
@@ -43,7 +42,6 @@
 }
 
 .text a{
-    font-size: large;
     font-size: 20px;
     margin: 0;
     color: rgb(153, 129, 34);
@@ -67,6 +65,7 @@
     background-color: transparent;
     display: flex;
     flex-wrap: wrap;
+    margin: 2% 0;
     justify-content: center;
     align-items: center;
 }
@@ -77,6 +76,17 @@
 
 @media (max-width: 600px) {
     .iconwrap{
-        margin: 80px 0;
+        margin: 2% 0;
+    }
+    .text h1{
+        font-size: 22px;
+    
+    }
+    .text p{
+        font-size: 16px;
+    }
+
+    .text a{
+        font-size: 16px;
     }
   }
