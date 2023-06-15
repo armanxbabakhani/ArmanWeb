@@ -160,7 +160,7 @@ export default function Tutoring() {
                 </div>
                 <div className={styles.textbox}>
                     <div className={styles.text}>
-                        <p> We are a group of expert PhD students with publications in the field of theoretical and computational physics. Check out Arman's <a><Link href="/projects" passHref>publications</Link></a>, and click the icon below for his tutoring qualifications. </p>
+                        <p> We are a group of expert PhD students with publications in the field of theoretical and computational physics. Check out Arman <a><Link href="/projects" passHref>publications</Link></a>, and click the icon below for his tutoring qualifications. </p>
                     </div>
                 </div>
                 <div className={styles.iconwrap}>
@@ -171,7 +171,7 @@ export default function Tutoring() {
                 
                 <div className={styles.textbox}>
                     <div className={styles.text}>
-                        <p> You can also see Arman's tutoring reviews below, on Wyzant.com.</p>
+                        <p> You can also see Arman tutoring reviews below, on Wyzant.com.</p>
                     </div>
                 </div>
                 
@@ -185,7 +185,7 @@ export default function Tutoring() {
 
                 <div className={styles.textbox}>
                     <div className={styles.text}>
-                        <p> To check out some of Arman's tutoring videos, click on the icon below.</p>
+                        <p> To check out some of Arman tutoring videos, click on the icon below.</p>
                     </div>
                 </div>
 
