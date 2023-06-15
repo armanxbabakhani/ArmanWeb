@@ -17,7 +17,7 @@ const Icon_background = styled.div`
 background-image: url(${props => props.img});
 background-size: cover;
 background-color: black;
-margin: 20px 20px;
+margin: 4%;
 height: 180px;
 width: 340px;
 border-radius: 15px;
