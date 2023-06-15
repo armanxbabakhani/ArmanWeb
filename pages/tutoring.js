@@ -17,7 +17,7 @@ const Icon_background = styled.div`
 background-image: url(${props => props.img});
 background-size: cover;
 background-color: black;
-margin: 10px 20px;
+margin: 20px 20px;
 height: 180px;
 width: 340px;
 border-radius: 15px;
@@ -119,23 +119,13 @@ export default function Tutoring() {
                 <Image src="/main_logo.png" alt="Future logo" width={100} height={100} />
             </div>
             <div className={styles.background}>
+                <div className={styles.textbox}>
+                    <div className={styles.text}>
+                        <h1>Ignite your learning with professional and accomplished Maths and Science tutors</h1>
+                        <p> To book a tutoring session, contact me by clicking on the Contact icon.</p>
+                    </div>
+                </div>
                 <div className={styles.iconwrap}>
-                    <Icon_background img="experience_icon_low.png" curs="zoom-in" className={isClicked ? "clicked" : ""} onClick={()=> setIsClicked(!isClicked)}>
-                        {isClicked ? <Description> <li> A PhD Candidate at USC in theoretical Physics</li> <li>Author of various research papers in the field of quantum information.</li> <li> More than 8 years of experience. More than hundreds of students in advanced topics in mathematics, physics, and engineering courses.</li></Description> : <Title> Qualifications </Title>}
-                    </Icon_background>
-                    <Link href="https://www.wyzant.com/Tutors/ArmanB" passHref>
-                        <Icon_background img="/reviews_icon_low.png" curs="pointer">
-                            <Title> Reviews </Title>
-                        </Icon_background>
-                    </Link>
-                    <Icon_background img="subjects_icon_low.png" curs="zoom-in" className={isClicked2 ? "clicked" : ""} onClick={()=> setIsClicked2(!isClicked2)}>
-                    {isClicked2 ? <Description> <li>AP Calculus and Physics</li> <li>AP Chemistry</li> <li>Undergraduate Mathematics</li> <li>Undergraduate and Graduate Physics</li> <li> General Undergraduate Chemistry</li> <li> Introductory Computer-Science </li> <li> Additional Engineering Courses </li></Description> : <Title> Subjects </Title>}
-                    </Icon_background>
-                    <Link href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA" passHref>
-                        <Icon_background img="videos_icon.png" curs="pointer">
-                            <Title> Videos </Title>
-                        </Icon_background>
-                    </Link>
                     <Icon_background img="contact_icon_1.png" curs="zoom-in" className={isClicked3 ? "clicked" : ""} onClick={()=> setIsClicked3(!isClicked3)}>
                         {isClicked3 ? 
                             <Contact>
@@ -157,6 +147,54 @@ export default function Tutoring() {
                                 </StyledCont>
                             </Contact>: <Title> Contact </Title>}
                     </Icon_background>
+                </div>
+                <div className={styles.textbox}>
+                    <div className={styles.text}>
+                        <p> Arman along with other PhD students provide expert tutoring for high school classes, Undergraduate, and Graduate courses. Click the icon below for a concise list of courses and topics.</p>
+                    </div>
+                </div>
+                <div className={styles.iconwrap}>
+                    <Icon_background img="subjects_icon_low.png" curs="zoom-in" className={isClicked2 ? "clicked" : ""} onClick={()=> setIsClicked2(!isClicked2)}>
+                        {isClicked2 ? <Description> <li>AP Calculus and Physics</li> <li>AP Chemistry</li> <li>Undergraduate Mathematics</li> <li>Undergraduate and Graduate Physics</li> <li> General Undergraduate Chemistry</li> <li> Introductory Computer-Science </li> <li> Additional Engineering Courses </li></Description> : <Title> Subjects </Title>}
+                    </Icon_background>
+                </div>
+                <div className={styles.textbox}>
+                    <div className={styles.text}>
+                        <p> We are a group of expert PhD students with publications in the field of theoretical and computational physics. Check out Arman's <a><Link href="/projects" passHref>publications</Link></a>, and click the icon below for his tutoring qualifications. </p>
+                    </div>
+                </div>
+                <div className={styles.iconwrap}>
+                    <Icon_background img="experience_icon_low.png" curs="zoom-in" className={isClicked ? "clicked" : ""} onClick={()=> setIsClicked(!isClicked)}>
+                        {isClicked ? <Description> <li> A PhD Candidate at USC in theoretical Physics</li> <li>Author of various research papers in the field of quantum information.</li> <li> More than 8 years of experience. More than hundreds of students in advanced topics in mathematics, physics, and engineering courses.</li></Description> : <Title> Qualifications </Title>}
+                    </Icon_background>
+                </div>
+                
+                <div className={styles.textbox}>
+                    <div className={styles.text}>
+                        <p> You can also see Arman's tutoring reviews below, on Wyzant.com.</p>
+                    </div>
+                </div>
+                
+                <div className={styles.iconwrap}>
+                    <Link href="https://www.wyzant.com/Tutors/ArmanB" passHref>
+                        <Icon_background img="/reviews_icon_low.png" curs="pointer">
+                            <Title> Reviews </Title>
+                        </Icon_background>
+                    </Link>
+                </div>
+
+                <div className={styles.textbox}>
+                    <div className={styles.text}>
+                        <p> To check out some of Arman's tutoring videos, click on the icon below.</p>
+                    </div>
+                </div>
+
+                <div className={styles.iconwrap}>
+                    <Link href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA" passHref>
+                        <Icon_background img="videos_icon.png" curs="pointer">
+                            <Title> Videos </Title>
+                        </Icon_background>
+                    </Link>
                 </div>
             </div>
         </body>

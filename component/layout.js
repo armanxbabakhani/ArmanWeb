@@ -91,87 +91,85 @@ transition: all 0.5s ease-in-out;
 export default function Layout({children}){
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <body>
-            <div className={styles.container}>
-                <div className={styles.navigation}>
-                    <div className={styles.brand}>
-                        <a>Arman Babakhani</a>
-                    </div>
-                    <div className={styles.brandabv}>
-                        <a href="./">AB</a>
-                    </div>
-                    <nav>
-                        <div className={styles.navwrap}>
-                            <li>
-                                <Link href="/"passHref> Home </Link>
-                            </li>
-                            <li>
-                                <Link href="/me" passHref> About</Link>
-                            </li>
-                            <ItemDrop name = 'Publications'>
-                                <DropdownMenu>
-                                    <li>
-                                        <Link href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.103.042406" passHref> Quantum Error Correction </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="https://arxiv.org/abs/2210.14943" passHref> Topological Defects </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="https://arxiv.org/abs/2206.05310" passHref> Non-abelian Quantum Chaos </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-6-6-794&id=413486" passHref> Deep Learning: Microscopy</Link>
-                                    </li>
-                                </DropdownMenu>
-                            </ItemDrop>
-                            <li>
-                                <Link href="/Arman_Resume_web.pdf" passHref> CV </Link>
-                            </li>
-                            <ItemDrop name = 'Educational'>
-                                <DropdownMenu>
-                                    <li>
-                                        <Link href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA" passHref> Videos </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/tutoring" passHref> Tutoring </Link>
-                                    </li>
-                                </DropdownMenu>
-                            </ItemDrop>
-                        </div>
-                    </nav>
-                    <div className={styles.hamwrapper} onClick={() => setIsOpen(!isOpen)}>
-                        <Hamburger className={isOpen ? "open" : ""}>
-                        {isOpen && <Toplay/>}
-                        {isOpen && 
-                            <div className={styles.sidenav}>
-                                <Link href="/" passHref> Home </Link>
-                                <Link href="/me" passHref> About </Link>
-                                <Link href="/projects" passHref> Publications </Link>
-                                <Link href="/Arman_Resume_web.pdf" passHref> CV </Link>
-                                <Link href="/tutoring" passHref> Tutoring </Link>
-                                <Link href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA" passHref> Videos </Link>
-                            </div>
-                        }
-                        </Hamburger>
-                    </div>
+        <section className={styles.container}>
+            <div className={styles.navigation}>
+                <div className={styles.brand}>
+                    <a>Arman Babakhani</a>
                 </div>
-                <Background>
-                    {children}
-                    <div className={styleshome.footer}>
-                        <p> Connect with me: </p>
-                        <a href="https://www.linkedin.com/in/arman-babakhani/"> 
-                            <Image src="/linkedin.png" alt="linkedin" width="50px" height="50px" /> 
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA"> 
-                            <Image src="/youtubetrans.png" alt="youtube" width="70px" height="70px" /> 
-                        </a>
-                        <a href="https://github.com/armanxbabakhani">
-                            <Image src="/github.png" alt="github" width="50px" height="50px" /> 
-                        </a>
+                <div className={styles.brandabv}>
+                    <a href="./">AB</a>
+                </div>
+                <nav>
+                    <div className={styles.navwrap}>
+                        <li>
+                            <Link href="/"passHref> Home </Link>
+                        </li>
+                        <li>
+                            <Link href="/me" passHref> About</Link>
+                        </li>
+                        <ItemDrop name = 'Publications'>
+                            <DropdownMenu>
+                                <li>
+                                    <Link href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.103.042406" passHref> Quantum Error Correction </Link>
+                                </li>
+                                <li>
+                                    <Link href="https://arxiv.org/abs/2210.14943" passHref> Topological Defects </Link>
+                                </li>
+                                <li>
+                                    <Link href="https://arxiv.org/abs/2206.05310" passHref> Non-abelian Quantum Chaos </Link>
+                                </li>
+                                <li>
+                                    <Link href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-6-6-794&id=413486" passHref> Deep Learning: Microscopy</Link>
+                                </li>
+                            </DropdownMenu>
+                        </ItemDrop>
+                        <li>
+                            <Link href="/Arman_Resume_web.pdf" passHref> CV </Link>
+                        </li>
+                        <ItemDrop name = 'Educational'>
+                            <DropdownMenu>
+                                <li>
+                                    <Link href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA" passHref> Videos </Link>
+                                </li>
+                                <li>
+                                    <Link href="/tutoring" passHref> Tutoring </Link>
+                                </li>
+                            </DropdownMenu>
+                        </ItemDrop>
                     </div>
-                </Background>
+                </nav>
+                <div className={styles.hamwrapper} onClick={() => setIsOpen(!isOpen)}>
+                    <Hamburger className={isOpen ? "open" : ""}>
+                    {isOpen && <Toplay/>}
+                    {isOpen && 
+                        <div className={styles.sidenav}>
+                            <Link href="/" passHref> Home </Link>
+                            <Link href="/me" passHref> About </Link>
+                            <Link href="/projects" passHref> Publications </Link>
+                            <Link href="/Arman_Resume_web.pdf" passHref> CV </Link>
+                            <Link href="/tutoring" passHref> Tutoring </Link>
+                            <Link href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA" passHref> Videos </Link>
+                        </div>
+                    }
+                    </Hamburger>
+                </div>
             </div>
-        </body>
+            <Background>
+                {children}
+                <div className={styleshome.footer}>
+                    <p> Connect with me: </p>
+                    <a href="https://www.linkedin.com/in/arman-babakhani/"> 
+                        <Image src="/linkedin.png" alt="linkedin" width="50px" height="50px" /> 
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA"> 
+                        <Image src="/youtubetrans.png" alt="youtube" width="70px" height="70px" /> 
+                    </a>
+                    <a href="https://github.com/armanxbabakhani">
+                        <Image src="/github.png" alt="github" width="50px" height="50px" /> 
+                    </a>
+                </div>
+            </Background>
+        </section>
     );
 }
 
