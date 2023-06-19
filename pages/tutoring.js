@@ -122,7 +122,7 @@ export default function Tutoring() {
                 <div className={styles.textbox}>
                     <div className={styles.text}>
                         <h1>Ignite your learning with professional and accomplished Maths and Science tutors</h1>
-                        <p> To book a tutoring session, contact me by clicking on the Contact icon.</p>
+                        <p> To book a tutoring session, contact us by clicking on the Contact icon.</p>
                     </div>
                 </div>
                 <div className={styles.iconwrap}>
