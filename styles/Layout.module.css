@@ -2,7 +2,7 @@
  .navigation {
     position: fixed;
     top: 0px;
-    height: 75px;
+    height: 100px;
     background: linear-gradient(45deg, #000000, #262821);
     width: 100%;
     display: flex;
@@ -29,7 +29,7 @@
     margin: 0 1rem;
     line-height: 75px;
     text-transform: uppercase;
-    font-size: 1.6em;
+    font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
  .brand a {
@@ -56,9 +56,9 @@
     top: 75px;
     right: 20px;
     transform: translateX(-50%);
-    background: rgb(79, 85, 99);
+    background: rgb(80, 85, 100);
     transition: background 300ms;
-    padding: 0 10px;
+    padding: 15px;
     z-index: 8;
     box-shadow: 0 0 35px 0 rgba(0,0,0,0.25);
     opacity: 0.95;
@@ -67,18 +67,18 @@
 }
 
 .navdropdown:hover{
-    background-color: rgb(78, 70, 63);
+    background-color: rgb(80, 95, 110);
 }
 
 .droplist{
     display: flex;
     flex-direction: column;
     justify-content: left;
-    padding: 0 20px 0;
+    padding: 0 25px;
 }
 
 .droplist a{
-    font-size: 1.2rem;
+    font-size: 26px;
     color:rgb(208, 208, 208);
     transition: color 300ms;
 }
@@ -221,9 +221,8 @@
 }
 
 .navwrap li {
-    padding: 0 20px;
-    text-indent: -10px;
-    font-size: 1.2rem;
+    padding: 0 25px;
+    font-size: 26px;
 }
 
 .navwrap li a, .navwrap li a:visited {
@@ -244,7 +243,22 @@ color: rgb(170,150,150);
 }
 
 
-@media only screen and (max-width: 1080px){
+@media only screen and (max-width: 1400px){
+    .droplist a{
+        font-size: 22px;
+    }
+
+    .navwrap li{
+        font-size: 22px;
+    }
+
+    .brand{
+        font-size: 25px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px){
     .brandabv{
         display: block;
         position: absolute;
@@ -256,10 +270,10 @@ color: rgb(170,150,150);
    }
 }
 
-@media only screen and (max-width: 825px){
+@media only screen and (max-width: 900px){
     .hamwrapper{
         position: fixed;
-        right: 0px;
+        right: 5%;
         padding: 10px 20px;
         display: flex;
         flex-direction: column;
@@ -267,9 +281,7 @@ color: rgb(170,150,150);
         align-content: space-between;
         z-index: 10;
     }
-}
 
-@media only screen and (max-height: 900px){
     .main{
         min-height: 450px;
     }

@@ -121,8 +121,8 @@ export default function Tutoring() {
             <div className={styles.background}>
                 <div className={styles.textbox}>
                     <div className={styles.text}>
-                        <h1>Ignite your learning with professional and accomplished Maths and Science tutors</h1>
-                        <p> To book a tutoring session, contact us by clicking on the Contact icon.</p>
+                        <h1>Learning requires patience and good mentorship</h1>
+                        <p> To book a tutoring session, contact me by clicking on the Contact icon.</p>
                     </div>
                 </div>
                 <div className={styles.iconwrap}>
@@ -150,7 +150,7 @@ export default function Tutoring() {
                 </div>
                 <div className={styles.textbox}>
                     <div className={styles.text}>
-                        <p> Arman along with other PhD students provide expert tutoring for high school classes, Undergraduate, and Graduate courses. Click the icon below for a concise list of courses and topics.</p>
+                        <p> I along with other PhD students provide expert tutoring for high school classes, Undergraduate, and Graduate courses. Click the icon below for a concise list of courses and topics.</p>
                     </div>
                 </div>
                 <div className={styles.iconwrap}>
@@ -171,7 +171,7 @@ export default function Tutoring() {
                 
                 <div className={styles.textbox}>
                     <div className={styles.text}>
-                        <p> You can also see Arman tutoring reviews below, on Wyzant.com.</p>
+                        <p> You can also see my tutoring reviews below, on Wyzant.com.</p>
                     </div>
                 </div>
                 
@@ -185,7 +185,7 @@ export default function Tutoring() {
 
                 <div className={styles.textbox}>
                     <div className={styles.text}>
-                        <p> To check out some of Arman tutoring videos, click on the icon below.</p>
+                        <p> To check out some of my tutoring videos, click on the icon below.</p>
                     </div>
                 </div>
 

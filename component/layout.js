@@ -30,7 +30,7 @@ function DropdownMenu(props){
 
 const Background = styled.div`
 position: relative;
-top: 75px;
+top: 100px;
 background: linear-gradient(135deg , gray, white);
 display: flex;
 flex-direction: column;
@@ -110,6 +110,9 @@ export default function Layout({children}){
                         <ItemDrop name = 'Publications'>
                             <DropdownMenu>
                                 <li>
+                                    <Link href="https://arxiv.org/abs/2307.06503" passHref> Quantum Monte Carlo </Link>
+                                </li>
+                                <li>
                                     <Link href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.103.042406" passHref> Quantum Error Correction </Link>
                                 </li>
                                 <li>
@@ -159,13 +162,13 @@ export default function Layout({children}){
                 <div className={styleshome.footer}>
                     <p> Connect with me: </p>
                     <a href="https://www.linkedin.com/in/arman-babakhani/"> 
-                        <Image src="/linkedin.png" alt="linkedin" width="50px" height="50px" /> 
+                        <Image src="/linkedin.png" alt="linkedin" width="60px" height="60px" /> 
                     </a>
                     <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA"> 
-                        <Image src="/youtubetrans.png" alt="youtube" width="70px" height="70px" /> 
+                        <Image src="/youtubetrans.png" alt="youtube" width="75px" height="75px" /> 
                     </a>
                     <a href="https://github.com/armanxbabakhani">
-                        <Image src="/github.png" alt="github" width="50px" height="50px" /> 
+                        <Image src="/github.png" alt="github" width="60px" height="60px" /> 
                     </a>
                 </div>
             </Background>
