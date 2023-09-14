@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
         <Head>
             <title>Arman Babakhani</title>
             <meta name="personal website" content="Projects and Tutoring, initial-scale=1.0" />
-            <link rel="icon" href="/Armanlogo.png" />
+            <link rel="icon" href="/Armanlogo.png"/>
         </Head> 
         <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11087720521"></Script>
         <Script id="google-analytics">
