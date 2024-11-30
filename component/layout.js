@@ -160,15 +160,15 @@ export default function Layout({children}){
             <Background>
                 {children}
                 <div className={styleshome.footer}>
-                    <p> Connect with me: </p>
+                    <p> Connect with me </p>
                     <a href="https://www.linkedin.com/in/arman-babakhani/"> 
-                        <Image src="/linkedin.png" alt="linkedin" width="60px" height="60px" /> 
+                        <Image src="/linkedin.png" alt="linkedin" width={60} height={60} /> 
                     </a>
                     <a href="https://www.youtube.com/channel/UCtuf8lx4SvE3hEZe7NuagzA"> 
-                        <Image src="/youtubetrans.png" alt="youtube" width="75px" height="75px" /> 
+                        <Image src="/youtubetrans.png" alt="youtube" width={75} height={75} /> 
                     </a>
                     <a href="https://github.com/armanxbabakhani">
-                        <Image src="/github.png" alt="github" width="60px" height="60px" /> 
+                        <Image src="/github.png" alt="github" width={60} height={60} /> 
                     </a>
                 </div>
             </Background>

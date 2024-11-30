@@ -7,7 +7,7 @@ export default function Home() {
     <div className={styles.container}>
       <main className={styles.main}>
         <div className={styles.pframe}>
-          <Image src="/Arman_portrait_1.jpg" alt="Arman" width="325px" height="290px" className={styles.portrait}/>
+          <Image src="/Arman_portrait_1.jpg" alt="Arman" width={325} height={290} className={styles.portrait}/>
         </div>
         <div className={styles.introbox}>
           <h3> Welcome! I am </h3>
@@ -17,37 +17,29 @@ export default function Home() {
         <div className={styles.grid}>
           <div  className={styles.card}>
             <Link href="/me"passHref>
-              <a>
-                <h2>About Me &rarr;</h2>
-                <p> My educational background and interests.</p>
-              </a>
+              <h2>About Me &rarr;</h2>
+              <p> My educational background and interests.</p>
             </Link>
           </div>
 
           <div className={styles.card}>
             <Link href="/projects"passHref>
-              <a>
-                <h2>Research &rarr;</h2>
-                <p>Completed projects and collaborations</p>
-              </a>
+              <h2>Research &rarr;</h2>
+              <p>Completed projects and collaborations</p>
             </Link>
           </div>
 
           <div className={styles.card}>
             <Link href="/tutoring" passHref>
-              <a>
-                <h2>Tutoring &rarr;</h2>
-                <p>Tutoring and educational consultation for STEM students.</p>
-              </a>
+              <h2>Tutoring &rarr;</h2>
+              <p>Tutoring and educational consultation for STEM students.</p>
             </Link>
           </div>
 
           <div className={styles.card}>
             <Link href="/projects" passHref>
-              <a>
-                <h2>Notes and Ongoing Projects &rarr;</h2>
-                <p>Some of my ongoing projects and some notes on miscellaneous topics.</p>
-              </a>
+              <h2>Notes and Ongoing Projects &rarr;</h2>
+              <p>Some of my ongoing projects and some notes on miscellaneous topics.</p>
             </Link>
           </div>
         </div>
