@@ -266,8 +266,45 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
 }
 
+.logoImage {
+  width: 75px;
+  height: 75px;
+  transition: all 0.2s ease; /* Optional: Smooth resizing */
+}
 
-@media only screen and (max-width: 600px) {
+
+/* Further adjustments for extra small devices (e.g., iPhone SE) */
+@media screen and (max-width: 480px) {
+  .project {
+    font-size: 18px; /* Smaller font size for compact screens */
+    margin: 3px 0;
+  }
+
+  .projectbox {
+    padding: 8%;
+  }
+
+  .projectcontainer {
+    padding: 10px; /* Minimize padding further */
+    margin: 5px 0; /* Minimal margin */
+    max-width: 100%; /* Full width for small devices */
+  }
+
+  .projectcontainer h3 {
+    font-size: 130%; /* Further reduce title size */
+  }
+
+  .projectcontainer p {
+    font-size: 12px; /* Compact paragraph text */
+  }
+
+  .projectcontainer a {
+    font-size: 12px; /* Match link size to paragraph text */
+  }
+}
+
+
+@media only screen and (max-width: 780px) {
   .grid {
     width: 100%;
     flex-direction: column;
@@ -278,6 +315,82 @@
 
   .footer p {
     display: none;
+  }
+
+  .project {
+    margin: 5px 0; /* Reduce margin for smaller screens */
+    font-size: 20px; /* Slightly smaller font size */
+  }
+
+  .projectbox {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 10%; /* Adjust padding for better fit */
+    font-size: 90%; /* Scale font size */
+  }
+
+  .image {
+    margin: 2% 2%; /* Reduce side margins */
+  }
+
+  .projectcontainer {
+    padding: 15px; /* Reduce internal padding */
+    margin: 10px 0; /* Decrease vertical spacing between boxes */
+    max-width: 90%; /* Use a percentage to make it fluid */
+  }
+
+  .projectcontainer h3 {
+    font-size: 150%; /* Reduce title size for better fit */
+    margin-bottom: 8px; /* Adjust spacing */
+  }
+
+  .projectcontainer p {
+    font-size: 14px; /* Ensure paragraph text is readable but compact */
+    line-height: 1.4; /* Slightly tighter line spacing */
+    margin-bottom: 10px; /* Reduce spacing */
+  }
+
+  .projectcontainer a {
+    font-size: 14px; /* Match link font size to paragraph text */
+  }
+
+  .projectcontainer:hover {
+    transform: none; /* Disable hover effects to avoid overlap on small screens */
+    box-shadow: none; /* Simplify shadow for smaller devices */
+  }
+
+  .title h1{
+    font-size: 30px;
+    margin: 0;
+    padding: 10% 0;
+  
+  }
+
+  .introbox h1{
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .introbox h3{
+    font-size: 20px;
+    font-weight: 50;
+  }
+  .introbox h4{
+    font-size: 18px;
+    font-weight: 80;
+  }
+  .introbox p{
+    font-size: 15px;
+    font-weight: 250;
+    line-height: 20px;
+  }
+
+  .logoImage {
+    width: 50px; /* Adjust logo width for smaller screens */
+    height: 50px; /* Adjust logo height for smaller screens */
+  }
+
+  .logo h3{
+    font-size: 18px;
   }
 }
 

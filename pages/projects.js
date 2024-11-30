@@ -93,7 +93,13 @@ export default function Projects() {
             <div className={styles.logo}>
                 <h3>My Google Scholar page:</h3>
                 <Link href="https://scholar.google.com/citations?user=mnq3tfUAAAAJ&hl=en" passHref>
-                    <Image src="/googsch_logo.png" alt="Google Scholar" width={75} height={75} />
+                    <Image 
+                        src="/googsch_logo.png" 
+                        alt="Google Scholar" 
+                        className={styles.logoImage} 
+                        width={75} 
+                        height={75} 
+                    />
                 </Link>
             </div>
         </main>
