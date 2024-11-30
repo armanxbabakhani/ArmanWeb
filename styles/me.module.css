@@ -42,7 +42,7 @@
 }
 
 .me p{
-  font-size: 25px;
+  font-size: 22px;
   line-height: 1.5;
 }
 .me a {
@@ -56,7 +56,19 @@
 
 @media only screen and (max-width: 900px) {
     .main{
-        margin: 0 5%;
+      margin: 0 5%;
+    }
+
+    .title h1{
+      font-size: 2rem;
+    }
+
+    .me p{
+      font-size: 16px;
+    }
+
+    .me a{
+      font-size: 18px;
     }
 }
 
