@@ -7,7 +7,7 @@ export default function Home() {
     <div className={styles.container}>
       <main className={styles.main}>
         <div className={styles.pframe}>
-          <Image src="/Arman_headshot.jpg" alt="Arman" width={325} height={420} className={styles.portrait}/>
+          <Image src="/Arman_headshot.jpg" alt="Arman" width={335} height={420} className={styles.portrait}/>
         </div>
         <div className={styles.introbox}>
           <h3> Welcome! I am </h3>
