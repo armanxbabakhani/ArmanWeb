@@ -30,7 +30,7 @@ export default function Home() {
           </div>
 
           <div className={styles.card}>
-            <Link href="/tutoring" passHref>
+            <Link href="https://www.axbhub.org" passHref>
               <h2>Tutoring &rarr;</h2>
               <p>Tutoring and educational consultation for STEM students.</p>
             </Link>
