@@ -31,7 +31,8 @@
     line-height: 75px;
     text-transform: uppercase;
     font-size: 30px;
-    font-family: 'Roboto';
+    /* keep brand font consistent with navbar */
+    font-family: var(--nav-font-family);
 }
  .brand a {
     color: var(--nav-text-dark);
@@ -44,7 +45,7 @@
     line-height: 75px;
     text-transform: uppercase;
     font-size: 3rem;
-    font-family: 'Roboto';
+    font-family: var(--nav-font-family);
 }
 
 .brandabv a {
@@ -190,7 +191,7 @@
 .sidenav a{
     color: var(--nav-text-dark);
     font-size: 40px;
-    font-family: 'Roboto';
+    font-family: var(--nav-font-family);
 }
 
 .sidenav a:hover{
@@ -224,8 +225,8 @@
 .navwrap li {
     padding: 0 25px;
     font-size: 26px;
-    /* Use Ubuntu for navbar look */
-    font-family: 'Ubuntu', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* Use centralized navbar font */
+    font-family: var(--nav-font-family);
     text-transform: uppercase;
     letter-spacing: 0.06em;
     font-weight: 500;
