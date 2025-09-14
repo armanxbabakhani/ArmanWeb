@@ -12,7 +12,7 @@ export default function Home() {
         <div className={styles.introbox}>
           <h3> Welcome! I am </h3>
           <h1> Arman Babakhani </h1>
-          <h4> Researcher and a PhD student in quantum information theory and quantum algorithms.</h4>
+          <h4> Researcher in quantum information theory, quantum algorithms, and application of quantum optimization to financial systems.</h4>
         </div>
         <div className={styles.grid}>
           <div  className={styles.card}>
