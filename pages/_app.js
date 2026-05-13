@@ -8,8 +8,8 @@ function MyApp({ Component, pageProps }) {
   return( 
       <Layout>
         <Head>
-            <title>Arman Babakhani — Quantum Researcher</title>
-            <meta name="description" content="Portfolio of Arman Babakhani — researcher in quantum information theory, quantum algorithms, and quantum optimization." />
+            <title>Arman Babakhani — Quantum Algorithms Researcher</title>
+            <meta name="description" content="Arman Babakhani is a quantum algorithms researcher at JP Morgan Chase. Publications in Physical Review Letters, Physical Review A, Optica, and Communications in Mathematical Physics." />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <link rel="icon" href="/Armanlogo.png"/>
         </Head> 

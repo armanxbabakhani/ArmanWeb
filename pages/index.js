@@ -7,39 +7,32 @@ export default function Home() {
     <div className={styles.container}>
       <main className={styles.main}>
         <div className={styles.pframe}>
-          <Image src="/Arman_headshot.jpg" alt="Arman" width={335} height={420} className={styles.portrait}/>
+          <Image src="/Arman_headshot.jpg" alt="Arman Babakhani" width={300} height={380} className={styles.portrait}/>
         </div>
         <div className={styles.introbox}>
-          <h3> Welcome! I am </h3>
-          <h1> Arman Babakhani </h1>
-          <h4> Researcher in quantum information theory, quantum algorithms, and application of quantum optimization to financial systems.</h4>
+          <h3>Quantum Algorithms · JP Morgan Chase</h3>
+          <h1>Arman Babakhani</h1>
+          <h4>Researcher at JP Morgan Chase, Global Research. Exploring quantum algorithms, quantum simulation, and condensed matter theory for computational applications.</h4>
         </div>
         <div className={styles.grid}>
-          <div  className={styles.card}>
-            <Link href="/me"passHref>
-              <h2>About Me &rarr;</h2>
-              <p> My educational background and interests.</p>
-            </Link>
-          </div>
-
           <div className={styles.card}>
-            <Link href="/projects"passHref>
+            <Link href="/research" passHref>
               <h2>Research &rarr;</h2>
-              <p>Completed projects and collaborations</p>
+              <p>Publications across quantum algorithms, quantum Monte Carlo, error correction, and topological phases.</p>
             </Link>
           </div>
 
           <div className={styles.card}>
-            <Link href="https://www.axbhub.org" passHref>
-              <h2>Tutoring &rarr;</h2>
-              <p>Tutoring and educational consultation for STEM students.</p>
+            <Link href="/about" passHref>
+              <h2>About &rarr;</h2>
+              <p>Background, education, and research interests.</p>
             </Link>
           </div>
 
           <div className={styles.card}>
-            <Link href="/projects" passHref>
-              <h2>Notes and Ongoing Projects &rarr;</h2>
-              <p>Some of my ongoing projects and some notes on miscellaneous topics.</p>
+            <Link href="https://scholar.google.com/citations?user=mnq3tfUAAAAJ&hl=en" passHref>
+              <h2>Google Scholar &rarr;</h2>
+              <p>342+ citations across 16 publications in quantum physics and applied machine learning.</p>
             </Link>
           </div>
         </div>
