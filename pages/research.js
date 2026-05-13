@@ -145,55 +145,43 @@ export default function Research() {
 
             <div className={styles.grid}>
                 {publications.map((pub, idx) => (
-                    <div key={idx}>
-                        <div className={styles.projectcontainer}>
-                            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px'}}>
-                                <span style={{
-                                    fontSize: '11px',
-                                    fontWeight: 600,
-                                    textTransform: 'uppercase',
-                                    letterSpacing: '0.1em',
-                                    color: '#735c00',
-                                }}>{pub.theme}</span>
-                                {pub.citations && (
-                                    <span style={{
-                                        fontSize: '12px',
-                                        fontWeight: 600,
-                                        color: '#444748',
-                                    }}>
-                                        {pub.citations} citations
-                                    </span>
-                                )}
-                            </div>
-                            <h3 style={{fontSize: '20px', textAlign: 'left', marginBottom: '6px'}}>{pub.title}</h3>
-                            <p style={{fontSize: '14px', color: '#444748', textAlign: 'left', lineHeight: '1.5', marginBottom: '4px'}}>{pub.authors}</p>
-                            <p style={{fontSize: '13px', color: '#747878', textAlign: 'left', fontStyle: 'italic', marginBottom: '12px'}}>{pub.venue}</p>
-                            <div style={{display: 'flex', gap: '16px'}}>
+                    <article key={idx} className={styles.projectcontainer}>
+                        <div className={styles.metaRow}>
+                            <span className={styles.theme}>{pub.theme}</span>
+                            {pub.citations && (
+                                <span className={styles.citations}>{pub.citations} citations</span>
+                            )}
+                        </div>
+                        <h3>{pub.title}</h3>
+                        <p className={styles.authors}>{pub.authors}</p>
+                        <p className={styles.venue}>{pub.venue}</p>
+                        {(pub.links.doi || pub.links.arxiv) && (
+                            <div className={styles.linkRow}>
                                 {pub.links.doi && (
-                                    <a href={pub.links.doi} target="_blank" rel="noopener noreferrer" style={{fontSize: '12px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em'}}>
-                                        Paper ↗
+                                    <a href={pub.links.doi} target="_blank" rel="noopener noreferrer" className={styles.pillLink}>
+                                        Paper <span className={styles.arrow}>↗</span>
                                     </a>
                                 )}
                                 {pub.links.arxiv && (
-                                    <a href={pub.links.arxiv} target="_blank" rel="noopener noreferrer" style={{fontSize: '12px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em'}}>
-                                        arXiv ↗
+                                    <a href={pub.links.arxiv} target="_blank" rel="noopener noreferrer" className={styles.pillLink}>
+                                        arXiv <span className={styles.arrow}>↗</span>
                                     </a>
                                 )}
                             </div>
-                        </div>
-                    </div>
+                        )}
+                    </article>
                 ))}
             </div>
 
             <div className={styles.logo}>
-                <h3>Full profile on Google Scholar:</h3>
+                <h3>Full profile on Google Scholar</h3>
                 <Link href="https://scholar.google.com/citations?user=mnq3tfUAAAAJ&hl=en" passHref>
                     <Image
                         src="/googsch_logo.png"
                         alt="Google Scholar"
                         className={styles.logoImage}
-                        width={75}
-                        height={75}
+                        width={56}
+                        height={56}
                     />
                 </Link>
             </div>

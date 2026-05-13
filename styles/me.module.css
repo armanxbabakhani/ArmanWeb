@@ -4,14 +4,36 @@
 
 .title, .description { line-height: 1.15; font-family: var(--font-family, 'Space Grotesk', sans-serif); }
 .title { width: 100%; text-align: center; }
-.title h1 { font-family: var(--font-family); font-size: 40px; font-weight: 600; letter-spacing: -0.01em; color: var(--color-primary); margin: 0; }
+.title h1 { font-family: var(--font-family); font-size: 40px; font-weight: 600; letter-spacing: 0.04em; color: var(--color-primary); margin: 0; }
 .title a { color: var(--color-secondary); text-decoration: none; }
 
-.me { background: rgba(247,249,251,0.6); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(196,199,199,0.35); box-shadow: 0 0 32px rgba(0,0,0,0.04); border-radius: 8px; width: 100%; padding: 40px 48px; text-align: left; border-left: 3px solid var(--color-secondary); font-family: var(--font-family); transition: color 0.15s ease, border-color 0.15s ease; }
-.me p { font-family: var(--font-family); font-size: 18px; line-height: 1.7; color: var(--color-on-surface-variant); margin: 0 0 24px; }
+.me {
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px) saturate(115%);
+  -webkit-backdrop-filter: blur(14px) saturate(115%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 10px;
+  width: 100%;
+  padding: 40px 48px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-family);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.me::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, transparent 0%, var(--color-secondary-dim) 50%, transparent 100%);
+  opacity: 0.55;
+}
+.me p { font-family: var(--font-family); font-size: 18px; line-height: 1.75; color: var(--color-on-surface-variant); margin: 0 0 24px; }
 .me p:last-child { margin-bottom: 0; }
-.me a { color: var(--color-secondary); font-weight: 600; font-size: 18px; transition: color 0.2s ease; }
-.me a:hover { color: var(--color-primary); }
+.me a { color: var(--color-secondary); font-weight: 600; font-size: 18px; transition: color 0.2s ease; border-bottom: 1px solid rgba(138, 111, 47, 0.25); }
+.me a:hover { color: var(--color-primary); border-bottom-color: var(--color-primary); }
 
 @media (max-width: 900px) {
   .main { margin: 0 5%; }

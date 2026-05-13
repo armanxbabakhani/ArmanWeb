@@ -8,7 +8,7 @@ import styled from 'styled-components'
 const Background = styled.div`
 position: relative;
 top: 80px;
-background: #f7f9fb;
+background: var(--color-background);
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -31,7 +31,7 @@ const Hamburger = styled.div`
 z-index: 20;
 width: 40px;
 height: 5px;
-background-color: #000000;
+background-color: var(--color-primary);
 margin: 0 0;
 border-radius: 3px;
 transition: all 0.5s ease-in-out;
@@ -40,7 +40,7 @@ transition: all 0.5s ease-in-out;
     width: 40px;
     height: 5px;
     position: absolute;
-    background-color: #000000;
+    background-color: var(--color-primary);
     margin: 6px 0;
     border-radius: 3px;
     transition: all 0.5s ease-in-out;
