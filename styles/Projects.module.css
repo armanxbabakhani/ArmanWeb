@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* fonts handled in globals.css */
 
 .main {
     padding: 2% 15% 0;
@@ -24,7 +24,7 @@
 }
 
 .logo a {
-  color:rgb(204, 200, 198);
+  color: var(--color-on-surface-variant);
   transition: filter 200ms;
 }
 
@@ -51,7 +51,7 @@
 
 .title,
 .description {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-family);
 }
 
 .title {
@@ -60,14 +60,15 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: var(--color-secondary);
   text-decoration: none;
 }
 .title h1{
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--color-primary);
   margin: 0;
   padding: 5% 0;
-
 }
 
 .description {
@@ -77,19 +78,19 @@
 }
 
 .description li a{
-  color: rgb(196, 58, 33);
+  color: var(--color-secondary);
   font-weight: bold;
 }
 
 .description li a:hover{
-  color: #186bb4;
+  color: var(--color-primary);
 }
 
 .introbox{
   background: transparent;
   width: 100%;
   text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-family);
 }
 
 .introbox h1{
@@ -112,16 +113,19 @@
 }
 
 .roundbox {
-  background: #feefe4;
+  background: rgba(247,249,251,0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   width: 80%;
   margin: 2%;
   padding: 2% 5%;
   text-align: center;
   color: inherit;
   text-decoration: none;
-  border: 2.5px solid #494E60;
-  border-radius: 30px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border: 1px solid rgba(196,199,199,0.35);
+  border-radius: 8px;
+  border-left: 3px solid var(--color-secondary);
+  font-family: var(--font-family);
 }
 
 .roundbox h3{
@@ -134,13 +138,17 @@
 }
 
 .me{
-  background-color: #9da4aa;
-  border-radius: 10px;
+  background: rgba(247,249,251,0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(196,199,199,0.35);
+  border-left: 3px solid var(--color-secondary);
+  border-radius: 8px;
   margin: 0 0.5rem 1.5rem;
   padding: 1rem 2rem;
   text-align: left;
   color: inherit;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-family);
   font-size: 1.5rem;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 1200px;
@@ -150,18 +158,19 @@
   line-height: 1.25;
 }
 .me a {
-  color: rgb(167, 93, 56);
+  color: var(--color-secondary);
   font-size: 1.5rem;
+  font-weight: 600;
 }
 .me a:hover{
-    color: #186bb4;
+    color: var(--color-primary);
 }
 .code {
-  background: #fafafa;
-  border-radius: 5px;
+  background: var(--color-surface-low);
+  border-radius: 4px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-family);
 }
 
 .grid {
@@ -174,23 +183,27 @@
 
 
 .card {
-  background: #E8E1CB;
+  background: rgba(247,249,251,0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 2.5px solid #494E60;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  border: 1px solid rgba(196,199,199,0.35);
+  border-radius: 8px;
+  border-left: 3px solid var(--color-secondary);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
   max-width: 300px;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #1985bf;
-  border-color: #00003a;
+  border-color: var(--color-secondary);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
 }
 
 .card h2 {
@@ -206,7 +219,7 @@
 
 .project {
   display: inline-block;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-family);
   margin: 10px 0;
   line-height: 1.5;
   font-size: 25px;
@@ -226,23 +239,26 @@
 }
 
 .projectcontainer {
-  background-color: #b7b7b7; /* Light background for contrast */
-  border: 2px solid #e0e0e0; /* Subtle border */
-  border-radius: 5px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  padding: 20px; /* Internal spacing */
-  margin: 20px 0; /* Space between project boxes */
-  max-width: 800px; /* Limit the width */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Clean, readable font */
-  color: #333; /* Dark text for readability */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+  background: rgba(247,249,251,0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(196,199,199,0.35);
+  border-radius: 8px;
+  box-shadow: 0 0 32px rgba(0,0,0,0.04);
+  border-left: 3px solid var(--color-secondary);
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 800px;
+  font-family: var(--font-family);
+  color: var(--color-on-surface);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;
 }
 
 .projectcontainer h3 {
-  font-size: 200%; /* Slightly larger title font */
-  margin-bottom: 10px; /* Space below the title */
-  color: #271f08; /* Eye-catching color for the title */
+  font-size: 200%;
+  margin-bottom: 10px;
+  color: var(--color-primary);
 }
 
 .projectcontainer p {
@@ -252,9 +268,9 @@
 }
 
 .projectcontainer a {
-  color: #8d8014; /* Link color matching the title */
-  text-decoration: none; /* Remove underline */
-  font-weight: bold;
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .projectcontainer a:hover {

@@ -8,8 +8,9 @@ function MyApp({ Component, pageProps }) {
   return( 
       <Layout>
         <Head>
-            <title>Arman Babakhani</title>
-            <meta name="personal website" content="Projects and Tutoring, initial-scale=1.0" />
+            <title>Arman Babakhani — Quantum Researcher</title>
+            <meta name="description" content="Portfolio of Arman Babakhani — researcher in quantum information theory, quantum algorithms, and quantum optimization." />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <link rel="icon" href="/Armanlogo.png"/>
         </Head> 
         <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11087720521"></Script>

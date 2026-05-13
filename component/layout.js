@@ -30,24 +30,21 @@ function DropdownMenu(props){
 
 const Background = styled.div`
 position: relative;
-top: 100px;
-background: linear-gradient(135deg , gray, white);
+top: 80px;
+background: #f7f9fb;
 display: flex;
 flex-direction: column;
 justify-content: center;
 overflow: auto;
 z-index: 1;
+min-height: calc(100vh - 80px);
 `;
 const Toplay = styled.div`
-position: fixed;    
-left:0;
-right:0;
-top: 0;
-bottom: 0;
-background-color: gray;
-opacity: 0.7;
-width:100%;
-height: 100%;
+position: fixed;
+inset: 0;
+background: rgba(25, 28, 30, 0.45);
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
 z-index: 9;
 overflow: auto;
 `;
@@ -56,7 +53,7 @@ const Hamburger = styled.div`
 z-index: 20;
 width: 40px;
 height: 5px;
-background-color: #BCBCBC;
+background-color: #000000;
 margin: 0 0;
 border-radius: 3px;
 transition: all 0.5s ease-in-out;
@@ -65,7 +62,7 @@ transition: all 0.5s ease-in-out;
     width: 40px;
     height: 5px;
     position: absolute;
-    background-color: #BCBCBC;
+    background-color: #000000;
     margin: 6px 0;
     border-radius: 3px;
     transition: all 0.5s ease-in-out;
